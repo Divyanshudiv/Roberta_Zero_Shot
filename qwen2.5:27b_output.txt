@@ -1,0 +1,961 @@
+Iteration 1: Current label prompts:
+0: "World"
+1: "Sports"
+2: "Business"
+4: "Sci/Tech"
+{0: "This article discusses global events and international news.", 1: "This text is about athletic competitions, players, and teams.", 2: "The content here involves corporate affairs, market trends, and financial news.", 3: "This piece focuses on technological advancements or scientific discoveries."}
+
+Iteration 2: Current label prompts:
+0: "This article discusses global events and international news."
+1: "This text is about athletic competitions, players, and teams."
+2: "The content here involves corporate affairs, market trends, and financial news."
+3: "This piece focuses on technological advancements or scientific discoveries."
+100%
+ 3000/3000 [02:23<00:00, 26.52it/s]
+
+            Here are the current prompts for labels:
+{0: 'This article discusses global events and international news.', 1: 'This text is about athletic competitions, players, and teams.', 2: 'The content here involves corporate affairs, market trends, and financial news.', 3: 'This piece focuses on technological advancements or scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This article discusses global events and international news.', 'This text is about athletic competitions, players, and teams.', 'The content here involves corporate affairs, market trends, and financial news.', 'This piece focuses on technological advancements or scientific discoveries.']
+
+Overall Accuracy: 69.50%
+
+Per-class Performance:
+                                                                                 precision    recall  f1-score   support
+
+The content here involves corporate affairs, market trends, and financial news.       0.73      0.66      0.69       702
+                   This article discusses global events and international news.       0.53      0.90      0.67       747
+    This piece focuses on technological advancements or scientific discoveries.       0.85      0.38      0.52       776
+                  This text is about athletic competitions, players, and teams.       0.87      0.85      0.86       775
+
+                                                                       accuracy                           0.69      3000
+                                                                      macro avg       0.75      0.70      0.69      3000
+                                                                   weighted avg       0.75      0.69      0.69      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                             text                                                                   true_label                                                                  predicted_label  confidence
+2006                                                                                                                                                                            Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This piece focuses on technological advancements or scientific discoveries.  The content here involves corporate affairs, market trends, and financial news.    0.940001
+1864                                                                                                                                                  Group Seeks Ways to Prosecute Cybercrime (AP) AP - Governments and private sector officials from around the world sought ways Thursday to jointly combat cybercrime, whose growth mirrors the phenomenal rise of the Internet's popularity.  This piece focuses on technological advancements or scientific discoveries.                     This article discusses global events and international news.    0.893224
+2205  Stocks Close Higher on Brokerage Earnings NEW YORK - Stocks dashed higher Tuesday as investors welcomed strong earnings from financial services companies, upbeat economic data and some reassuring news from the Federal Reserve.    The Fed's decision to raise short-term interest rates by another quarter-percentage point to 1.75 percent did not come as a surprise to the market...                 This article discusses global events and international news.  The content here involves corporate affairs, market trends, and financial news.    0.890286
+1797                                                                                                                                                                                                                                                                          News: Governments slow off the mark to combat growing threats of cybercrime The Associated Press By Robert Wielaard  This piece focuses on technological advancements or scientific discoveries.                     This article discusses global events and international news.    0.887208
+2434                                                                                                             Astronomers Spot Monster Collision of Galaxies (Reuters) Reuters - If you think Earth is a mess,\consider the turmoil in the constellation Hydra, where\astronomers have spotted two monster galactic clusters slamming\together in one of the biggest collisions ever recorded.  This piece focuses on technological advancements or scientific discoveries.                     This article discusses global events and international news.    0.885581
+
+            
+Common Error Patterns:
+This piece focuses on technological advancements or scientific discoveries. → This article discusses global events and international news.: 304
+The content here involves corporate affairs, market trends, and financial news. → This article discusses global events and international news.: 187
+This piece focuses on technological advancements or scientific discoveries. → The content here involves corporate affairs, market trends, and financial news.: 135
+This text is about athletic competitions, players, and teams. → This article discusses global events and international news.: 103
+This piece focuses on technological advancements or scientific discoveries. → This text is about athletic competitions, players, and teams.: 44
+This article discusses global events and international news. → This text is about athletic competitions, players, and teams.: 36
+The content here involves corporate affairs, market trends, and financial news. → This piece focuses on technological advancements or scientific discoveries.: 34
+This article discusses global events and international news. → The content here involves corporate affairs, market trends, and financial news.: 25
+The content here involves corporate affairs, market trends, and financial news. → This text is about athletic competitions, players, and teams.: 21
+This article discusses global events and international news. → This piece focuses on technological advancements or scientific discoveries.: 16
+This text is about athletic competitions, players, and teams. → The content here involves corporate affairs, market trends, and financial news.: 9
+This text is about athletic competitions, players, and teams. → This piece focuses on technological advancements or scientific discoveries.: 1
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This article is centered on global events and international news.", 1: "The text focuses on athletic competitions, players, and teams.", 2: "This content delves into corporate affairs, market trends, and financial news.", 3: "The piece highlights technological advancements or scientific discoveries."}
+
+Iteration 3: Current label prompts:
+0: "This article is centered on global events and international news."
+1: "The text focuses on athletic competitions, players, and teams."
+2: "This content delves into corporate affairs, market trends, and financial news."
+3: "The piece highlights technological advancements or scientific discoveries."
+100%
+ 3000/3000 [03:09<00:00, 25.67it/s]
+
+            Here are the current prompts for labels:
+{0: 'This article is centered on global events and international news.', 1: 'The text focuses on athletic competitions, players, and teams.', 2: 'This content delves into corporate affairs, market trends, and financial news.', 3: 'The piece highlights technological advancements or scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This article is centered on global events and international news.', 'The text focuses on athletic competitions, players, and teams.', 'This content delves into corporate affairs, market trends, and financial news.', 'The piece highlights technological advancements or scientific discoveries.']
+
+Overall Accuracy: 59.10%
+
+Per-class Performance:
+                                                                                precision    recall  f1-score   support
+
+    The piece highlights technological advancements or scientific discoveries.       0.82      0.14      0.23       776
+                The text focuses on athletic competitions, players, and teams.       0.95      0.61      0.74       775
+             This article is centered on global events and international news.       0.52      0.84      0.64       747
+This content delves into corporate affairs, market trends, and financial news.       0.49      0.81      0.61       702
+
+                                                                      accuracy                           0.59      3000
+                                                                     macro avg       0.70      0.60      0.56      3000
+                                                                  weighted avg       0.70      0.59      0.55      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                  true_label                                                                 predicted_label  confidence
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The piece highlights technological advancements or scientific discoveries.  This content delves into corporate affairs, market trends, and financial news.    0.955280
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The piece highlights technological advancements or scientific discoveries.  This content delves into corporate affairs, market trends, and financial news.    0.929357
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece highlights technological advancements or scientific discoveries.  This content delves into corporate affairs, market trends, and financial news.    0.890230
+635                                         Science Magazine: Asia Farmers Sucking Continent Dry (Reuters) Reuters - Asian farmers drilling millions of\pump-operated wells in an ever-deeper search for water are\threatening to suck the continent's underground reserves dry, a\science magazine warned on Wednesday.  The piece highlights technological advancements or scientific discoveries.               This article is centered on global events and international news.    0.880849
+2001                                                                                                                  ** For the latest news, please refresh this page regularly ** What #39;s up? I see the whole world has their eyes on the Oscar vs. Bernard fight. My thought is Oscar is coming off with an upset.              The text focuses on athletic competitions, players, and teams.               This article is centered on global events and international news.    0.867665
+
+            
+Common Error Patterns:
+The piece highlights technological advancements or scientific discoveries. → This content delves into corporate affairs, market trends, and financial news.: 393
+The piece highlights technological advancements or scientific discoveries. → This article is centered on global events and international news.: 274
+The text focuses on athletic competitions, players, and teams. → This article is centered on global events and international news.: 198
+This content delves into corporate affairs, market trends, and financial news. → This article is centered on global events and international news.: 115
+The text focuses on athletic competitions, players, and teams. → This content delves into corporate affairs, market trends, and financial news.: 107
+This article is centered on global events and international news. → This content delves into corporate affairs, market trends, and financial news.: 93
+This article is centered on global events and international news. → The text focuses on athletic competitions, players, and teams.: 20
+This content delves into corporate affairs, market trends, and financial news. → The piece highlights technological advancements or scientific discoveries.: 14
+This article is centered on global events and international news. → The piece highlights technological advancements or scientific discoveries.: 8
+The piece highlights technological advancements or scientific discoveries. → The text focuses on athletic competitions, players, and teams.: 3
+The text focuses on athletic competitions, players, and teams. → The piece highlights technological advancements or scientific discoveries.: 1
+This content delves into corporate affairs, market trends, and financial news. → The text focuses on athletic competitions, players, and teams.: 1
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This article is focused on global events and international news.", 1: "The text centers around athletic competitions, players, and teams.", 2: "This content examines corporate affairs, market trends, and financial news.", 3: "The piece emphasizes technological advancements or scientific discoveries."}
+
+Iteration 4: Current label prompts:
+0: "This article is focused on global events and international news."
+1: "The text centers around athletic competitions, players, and teams."
+2: "This content examines corporate affairs, market trends, and financial news."
+3: "The piece emphasizes technological advancements or scientific discoveries."
+100%
+ 3000/3000 [03:07<00:00, 24.03it/s]
+
+            Here are the current prompts for labels:
+{0: 'This article is focused on global events and international news.', 1: 'The text centers around athletic competitions, players, and teams.', 2: 'This content examines corporate affairs, market trends, and financial news.', 3: 'The piece emphasizes technological advancements or scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This article is focused on global events and international news.', 'The text centers around athletic competitions, players, and teams.', 'This content examines corporate affairs, market trends, and financial news.', 'The piece emphasizes technological advancements or scientific discoveries.']
+
+Overall Accuracy: 62.57%
+
+Per-class Performance:
+                                                                             precision    recall  f1-score   support
+
+ The piece emphasizes technological advancements or scientific discoveries.       0.81      0.09      0.16       776
+         The text centers around athletic competitions, players, and teams.       0.95      0.74      0.83       775
+           This article is focused on global events and international news.       0.58      0.83      0.68       747
+This content examines corporate affairs, market trends, and financial news.       0.49      0.87      0.63       702
+
+                                                                   accuracy                           0.63      3000
+                                                                  macro avg       0.71      0.63      0.58      3000
+                                                               weighted avg       0.71      0.63      0.58      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                  true_label                                                              predicted_label  confidence
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The piece emphasizes technological advancements or scientific discoveries.  This content examines corporate affairs, market trends, and financial news.    0.923964
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The piece emphasizes technological advancements or scientific discoveries.  This content examines corporate affairs, market trends, and financial news.    0.900870
+635                                         Science Magazine: Asia Farmers Sucking Continent Dry (Reuters) Reuters - Asian farmers drilling millions of\pump-operated wells in an ever-deeper search for water are\threatening to suck the continent's underground reserves dry, a\science magazine warned on Wednesday.  The piece emphasizes technological advancements or scientific discoveries.             This article is focused on global events and international news.    0.871215
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece emphasizes technological advancements or scientific discoveries.  This content examines corporate affairs, market trends, and financial news.    0.846109
+1067                                                                                                                                 British Bug Splat Survey Springs Surprise (Reuters) Reuters - The results of one of the stranger\environmental surveys to be conducted in Britain are in -- and\there's a surprise.  The piece emphasizes technological advancements or scientific discoveries.             This article is focused on global events and international news.    0.836775
+
+            
+Common Error Patterns:
+The piece emphasizes technological advancements or scientific discoveries. → This content examines corporate affairs, market trends, and financial news.: 434
+The piece emphasizes technological advancements or scientific discoveries. → This article is focused on global events and international news.: 265
+The text centers around athletic competitions, players, and teams. → This article is focused on global events and international news.: 107
+This article is focused on global events and international news. → This content examines corporate affairs, market trends, and financial news.: 94
+The text centers around athletic competitions, players, and teams. → This content examines corporate affairs, market trends, and financial news.: 93
+This content examines corporate affairs, market trends, and financial news. → This article is focused on global events and international news.: 82
+This article is focused on global events and international news. → The text centers around athletic competitions, players, and teams.: 24
+This content examines corporate affairs, market trends, and financial news. → The piece emphasizes technological advancements or scientific discoveries.: 11
+The piece emphasizes technological advancements or scientific discoveries. → The text centers around athletic competitions, players, and teams.: 6
+This article is focused on global events and international news. → The piece emphasizes technological advancements or scientific discoveries.: 6
+This content examines corporate affairs, market trends, and financial news. → The text centers around athletic competitions, players, and teams.: 1
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This text primarily discusses global events and international relations.", 1: "The content is mainly about athletic competitions, team performances, and individual players.", 2: "This piece delves into corporate activities, economic trends, and financial market analysis.", 3: "The article highlights recent technological innovations or scientific breakthroughs."}
+
+Iteration 5: Current label prompts:
+0: "This text primarily discusses global events and international relations."
+1: "The content is mainly about athletic competitions, team performances, and individual players."
+2: "This piece delves into corporate activities, economic trends, and financial market analysis."
+3: "The article highlights recent technological innovations or scientific breakthroughs."
+100%
+ 3000/3000 [02:28<00:00, 25.27it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text primarily discusses global events and international relations.', 1: 'The content is mainly about athletic competitions, team performances, and individual players.', 2: 'This piece delves into corporate activities, economic trends, and financial market analysis.', 3: 'The article highlights recent technological innovations or scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text primarily discusses global events and international relations.', 'The content is mainly about athletic competitions, team performances, and individual players.', 'This piece delves into corporate activities, economic trends, and financial market analysis.', 'The article highlights recent technological innovations or scientific breakthroughs.']
+
+Overall Accuracy: 39.07%
+
+Per-class Performance:
+                                                                                               precision    recall  f1-score   support
+
+         The article highlights recent technological innovations or scientific breakthroughs.       0.87      0.22      0.35       776
+The content is mainly about athletic competitions, team performances, and individual players.       0.93      0.13      0.22       775
+ This piece delves into corporate activities, economic trends, and financial market analysis.       0.28      0.94      0.43       702
+                     This text primarily discusses global events and international relations.       0.75      0.33      0.46       747
+
+                                                                                     accuracy                           0.39      3000
+                                                                                    macro avg       0.71      0.40      0.36      3000
+                                                                                 weighted avg       0.72      0.39      0.36      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                            true_label                                                                               predicted_label  confidence
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The article highlights recent technological innovations or scientific breakthroughs.  This piece delves into corporate activities, economic trends, and financial market analysis.    0.926676
+2508                        Quicken, Money Duel to a Draw (washingtonpost.com) washingtonpost.com - The Intuit-Microsoft battle for supremacy in the personal-finance software market is as long-running as some sports rivalries -- except that few users seem to care all that much about the outcome of this contest.  The article highlights recent technological innovations or scientific breakthroughs.  This piece delves into corporate activities, economic trends, and financial market analysis.    0.916870
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The article highlights recent technological innovations or scientific breakthroughs.  This piece delves into corporate activities, economic trends, and financial market analysis.    0.901495
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The article highlights recent technological innovations or scientific breakthroughs.  This piece delves into corporate activities, economic trends, and financial market analysis.    0.897453
+24                                              Rivals Try to Turn Tables on Charles Schwab By MICHAEL LIEDTKE     SAN FRANCISCO (AP) -- With its low prices and iconoclastic attitude, discount stock broker Charles Schwab Corp. (SCH) represented an annoying stone in Wall Street's wing-tipped shoes for decades...  The article highlights recent technological innovations or scientific breakthroughs.  This piece delves into corporate activities, economic trends, and financial market analysis.    0.893403
+
+            
+Common Error Patterns:
+The content is mainly about athletic competitions, team performances, and individual players. → This piece delves into corporate activities, economic trends, and financial market analysis.: 652
+The article highlights recent technological innovations or scientific breakthroughs. → This piece delves into corporate activities, economic trends, and financial market analysis.: 577
+This text primarily discusses global events and international relations. → This piece delves into corporate activities, economic trends, and financial market analysis.: 485
+The article highlights recent technological innovations or scientific breakthroughs. → This text primarily discusses global events and international relations.: 31
+This piece delves into corporate activities, economic trends, and financial market analysis. → This text primarily discusses global events and international relations.: 26
+The content is mainly about athletic competitions, team performances, and individual players. → This text primarily discusses global events and international relations.: 25
+This piece delves into corporate activities, economic trends, and financial market analysis. → The article highlights recent technological innovations or scientific breakthroughs.: 15
+This text primarily discusses global events and international relations. → The article highlights recent technological innovations or scientific breakthroughs.: 9
+This text primarily discusses global events and international relations. → The content is mainly about athletic competitions, team performances, and individual players.: 7
+The content is mainly about athletic competitions, team performances, and individual players. → The article highlights recent technological innovations or scientific breakthroughs.: 1
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This text is centered on global events and international diplomatic relations.", 1: "The content focuses on athletic competitions, including team sports and individual player achievements.", 2: "This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.", 3: "The article emphasizes recent technological advancements or scientific discoveries."}
+
+Iteration 6: Current label prompts:
+0: "This text is centered on global events and international diplomatic relations."
+1: "The content focuses on athletic competitions, including team sports and individual player achievements."
+2: "This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis."
+3: "The article emphasizes recent technological advancements or scientific discoveries."
+100%
+ 3000/3000 [02:28<00:00, 24.54it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is centered on global events and international diplomatic relations.', 1: 'The content focuses on athletic competitions, including team sports and individual player achievements.', 2: 'This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.', 3: 'The article emphasizes recent technological advancements or scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is centered on global events and international diplomatic relations.', 'The content focuses on athletic competitions, including team sports and individual player achievements.', 'This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.', 'The article emphasizes recent technological advancements or scientific discoveries.']
+
+Overall Accuracy: 60.47%
+
+Per-class Performance:
+                                                                                                         precision    recall  f1-score   support
+
+                    The article emphasizes recent technological advancements or scientific discoveries.       0.86      0.14      0.24       776
+The content focuses on athletic competitions, including team sports and individual player achievements.       0.94      0.86      0.90       775
+  This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.       0.40      0.89      0.55       702
+                         This text is centered on global events and international diplomatic relations.       0.68      0.55      0.61       747
+
+                                                                                               accuracy                           0.60      3000
+                                                                                              macro avg       0.72      0.61      0.58      3000
+                                                                                           weighted avg       0.73      0.60      0.58      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                           true_label                                                                                        predicted_label  confidence
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The article emphasizes recent technological advancements or scientific discoveries.  This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.    0.950328
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The article emphasizes recent technological advancements or scientific discoveries.  This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.    0.931644
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The article emphasizes recent technological advancements or scientific discoveries.  This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.    0.877578
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The article emphasizes recent technological advancements or scientific discoveries.  This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.    0.832771
+1503                                                                                               Decaying Pig Corpses Reveal Forensic Secrets (Reuters) Reuters - Decaying pig corpses deposited\in secret locations around London are providing scientists with\forensic information that may help them solve crimes.  The article emphasizes recent technological advancements or scientific discoveries.                         This text is centered on global events and international diplomatic relations.    0.827015
+
+            
+Common Error Patterns:
+The article emphasizes recent technological advancements or scientific discoveries. → This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.: 555
+This text is centered on global events and international diplomatic relations. → This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.: 298
+The article emphasizes recent technological advancements or scientific discoveries. → This text is centered on global events and international diplomatic relations.: 102
+The content focuses on athletic competitions, including team sports and individual player achievements. → This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis.: 83
+This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis. → This text is centered on global events and international diplomatic relations.: 68
+This text is centered on global events and international diplomatic relations. → The content focuses on athletic competitions, including team sports and individual player achievements.: 29
+The content focuses on athletic competitions, including team sports and individual player achievements. → This text is centered on global events and international diplomatic relations.: 22
+This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis. → The article emphasizes recent technological advancements or scientific discoveries.: 11
+The article emphasizes recent technological advancements or scientific discoveries. → The content focuses on athletic competitions, including team sports and individual player achievements.: 10
+This text is centered on global events and international diplomatic relations. → The article emphasizes recent technological advancements or scientific discoveries.: 7
+This piece is dedicated to corporate strategies, economic forecasts, and in-depth financial analysis. → The content focuses on athletic competitions, including team sports and individual player achievements.: 1
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This text is focused on international news and diplomatic interactions.", 1: "The content highlights athletic competitions, sports teams, and individual athlete accomplishments.", 2: "This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.", 3: "The article underscores recent technological innovations and scientific breakthroughs."}
+
+Iteration 7: Current label prompts:
+0: "This text is focused on international news and diplomatic interactions."
+1: "The content highlights athletic competitions, sports teams, and individual athlete accomplishments."
+2: "This piece delves into corporate business strategies, financial predictions, and detailed economic analysis."
+3: "The article underscores recent technological innovations and scientific breakthroughs."
+100%
+ 3000/3000 [02:26<00:00, 25.50it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is focused on international news and diplomatic interactions.', 1: 'The content highlights athletic competitions, sports teams, and individual athlete accomplishments.', 2: 'This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.', 3: 'The article underscores recent technological innovations and scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is focused on international news and diplomatic interactions.', 'The content highlights athletic competitions, sports teams, and individual athlete accomplishments.', 'This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.', 'The article underscores recent technological innovations and scientific breakthroughs.']
+
+Overall Accuracy: 63.63%
+
+Per-class Performance:
+                                                                                                              precision    recall  f1-score   support
+
+                      The article underscores recent technological innovations and scientific breakthroughs.       0.93      0.13      0.23       776
+         The content highlights athletic competitions, sports teams, and individual athlete accomplishments.       0.82      0.93      0.87       775
+This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.       0.45      0.77      0.57       702
+                                     This text is focused on international news and diplomatic interactions.       0.68      0.74      0.71       747
+
+                                                                                                    accuracy                           0.64      3000
+                                                                                                   macro avg       0.72      0.64      0.59      3000
+                                                                                                weighted avg       0.72      0.64      0.59      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                              true_label                                                                                               predicted_label  confidence
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The article underscores recent technological innovations and scientific breakthroughs.  This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.    0.924259
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The article underscores recent technological innovations and scientific breakthroughs.  This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.    0.904890
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The article underscores recent technological innovations and scientific breakthroughs.  This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.    0.867904
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The article underscores recent technological innovations and scientific breakthroughs.  This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.    0.856155
+1067                                                                                                                                 British Bug Splat Survey Springs Surprise (Reuters) Reuters - The results of one of the stranger\environmental surveys to be conducted in Britain are in -- and\there's a surprise.  The article underscores recent technological innovations and scientific breakthroughs.                                       This text is focused on international news and diplomatic interactions.    0.828723
+
+            
+Common Error Patterns:
+The article underscores recent technological innovations and scientific breakthroughs. → This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.: 504
+This text is focused on international news and diplomatic interactions. → This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.: 127
+This piece delves into corporate business strategies, financial predictions, and detailed economic analysis. → This text is focused on international news and diplomatic interactions.: 117
+The article underscores recent technological innovations and scientific breakthroughs. → This text is focused on international news and diplomatic interactions.: 116
+This text is focused on international news and diplomatic interactions. → The content highlights athletic competitions, sports teams, and individual athlete accomplishments.: 63
+The article underscores recent technological innovations and scientific breakthroughs. → The content highlights athletic competitions, sports teams, and individual athlete accomplishments.: 56
+This piece delves into corporate business strategies, financial predictions, and detailed economic analysis. → The content highlights athletic competitions, sports teams, and individual athlete accomplishments.: 42
+The content highlights athletic competitions, sports teams, and individual athlete accomplishments. → This piece delves into corporate business strategies, financial predictions, and detailed economic analysis.: 30
+The content highlights athletic competitions, sports teams, and individual athlete accomplishments. → This text is focused on international news and diplomatic interactions.: 28
+This piece delves into corporate business strategies, financial predictions, and detailed economic analysis. → The article underscores recent technological innovations and scientific breakthroughs.: 5
+This text is focused on international news and diplomatic interactions. → The article underscores recent technological innovations and scientific breakthroughs.: 3
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This text centers on global news and diplomatic relations.", 1: "The content emphasizes athletic events, sports teams, and athlete achievements.", 2: "This piece explores corporate strategies, financial forecasts, and economic analysis in depth.", 3: "The article highlights recent technological advancements and scientific discoveries."}
+
+Iteration 8: Current label prompts:
+0: "This text centers on global news and diplomatic relations."
+1: "The content emphasizes athletic events, sports teams, and athlete achievements."
+2: "This piece explores corporate strategies, financial forecasts, and economic analysis in depth."
+3: "The article highlights recent technological advancements and scientific discoveries."
+100%
+ 3000/3000 [02:52<00:00, 26.05it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text centers on global news and diplomatic relations.', 1: 'The content emphasizes athletic events, sports teams, and athlete achievements.', 2: 'This piece explores corporate strategies, financial forecasts, and economic analysis in depth.', 3: 'The article highlights recent technological advancements and scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text centers on global news and diplomatic relations.', 'The content emphasizes athletic events, sports teams, and athlete achievements.', 'This piece explores corporate strategies, financial forecasts, and economic analysis in depth.', 'The article highlights recent technological advancements and scientific discoveries.']
+
+Overall Accuracy: 62.03%
+
+Per-class Performance:
+                                                                                                precision    recall  f1-score   support
+
+          The article highlights recent technological advancements and scientific discoveries.       0.88      0.12      0.21       776
+               The content emphasizes athletic events, sports teams, and athlete achievements.       0.94      0.87      0.90       775
+This piece explores corporate strategies, financial forecasts, and economic analysis in depth.       0.41      0.81      0.54       702
+                                    This text centers on global news and diplomatic relations.       0.67      0.70      0.68       747
+
+                                                                                      accuracy                           0.62      3000
+                                                                                     macro avg       0.72      0.63      0.59      3000
+                                                                                  weighted avg       0.73      0.62      0.59      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                            true_label                                                                                 predicted_label  confidence
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The article highlights recent technological advancements and scientific discoveries.  This piece explores corporate strategies, financial forecasts, and economic analysis in depth.    0.937246
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The article highlights recent technological advancements and scientific discoveries.  This piece explores corporate strategies, financial forecasts, and economic analysis in depth.    0.930861
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The article highlights recent technological advancements and scientific discoveries.  This piece explores corporate strategies, financial forecasts, and economic analysis in depth.    0.888367
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The article highlights recent technological advancements and scientific discoveries.  This piece explores corporate strategies, financial forecasts, and economic analysis in depth.    0.873132
+941                                  IT seeing steady but slow growth: Forrester projects 7 percent &lt;b&gt;...&lt;/b&gt; Tech companies waiting for a big resurgence in spending on computer hardware, software, networks and staff better plan to wait about four more years, Forrester Research projected yesterday.  The article highlights recent technological advancements and scientific discoveries.  This piece explores corporate strategies, financial forecasts, and economic analysis in depth.    0.850332
+
+            
+Common Error Patterns:
+The article highlights recent technological advancements and scientific discoveries. → This piece explores corporate strategies, financial forecasts, and economic analysis in depth.: 560
+This text centers on global news and diplomatic relations. → This piece explores corporate strategies, financial forecasts, and economic analysis in depth.: 191
+This piece explores corporate strategies, financial forecasts, and economic analysis in depth. → This text centers on global news and diplomatic relations.: 120
+The article highlights recent technological advancements and scientific discoveries. → This text centers on global news and diplomatic relations.: 112
+The content emphasizes athletic events, sports teams, and athlete achievements. → This piece explores corporate strategies, financial forecasts, and economic analysis in depth.: 73
+This text centers on global news and diplomatic relations. → The content emphasizes athletic events, sports teams, and athlete achievements.: 29
+The content emphasizes athletic events, sports teams, and athlete achievements. → This text centers on global news and diplomatic relations.: 26
+The article highlights recent technological advancements and scientific discoveries. → The content emphasizes athletic events, sports teams, and athlete achievements.: 11
+This piece explores corporate strategies, financial forecasts, and economic analysis in depth. → The article highlights recent technological advancements and scientific discoveries.: 9
+This text centers on global news and diplomatic relations. → The article highlights recent technological advancements and scientific discoveries.: 4
+This piece explores corporate strategies, financial forecasts, and economic analysis in depth. → The content emphasizes athletic events, sports teams, and athlete achievements.: 4
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This text focuses exclusively on international affairs and diplomatic interactions.", 1: "The content highlights competitive sports, teams, and individual athlete accomplishments.", 2: "This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.", 3: "The piece underscores the latest technological innovations and scientific breakthroughs."}
+
+Iteration 9: Current label prompts:
+0: "This text focuses exclusively on international affairs and diplomatic interactions."
+1: "The content highlights competitive sports, teams, and individual athlete accomplishments."
+2: "This article provides in-depth coverage of business strategies, financial predictions, and economic analysis."
+3: "The piece underscores the latest technological innovations and scientific breakthroughs."
+100%
+ 3000/3000 [02:39<00:00, 21.69it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text focuses exclusively on international affairs and diplomatic interactions.', 1: 'The content highlights competitive sports, teams, and individual athlete accomplishments.', 2: 'This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.', 3: 'The piece underscores the latest technological innovations and scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text focuses exclusively on international affairs and diplomatic interactions.', 'The content highlights competitive sports, teams, and individual athlete accomplishments.', 'This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.', 'The piece underscores the latest technological innovations and scientific breakthroughs.']
+
+Overall Accuracy: 51.13%
+
+Per-class Performance:
+                                                                                                               precision    recall  f1-score   support
+
+                    The content highlights competitive sports, teams, and individual athlete accomplishments.       0.89      0.96      0.92       775
+                     The piece underscores the latest technological innovations and scientific breakthroughs.       0.92      0.13      0.23       776
+This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.       0.34      0.98      0.50       702
+                          This text focuses exclusively on international affairs and diplomatic interactions.       1.00      0.00      0.01       747
+
+                                                                                                     accuracy                           0.51      3000
+                                                                                                    macro avg       0.79      0.52      0.41      3000
+                                                                                                 weighted avg       0.79      0.51      0.42      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                                true_label                                                                                                predicted_label  confidence
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The piece underscores the latest technological innovations and scientific breakthroughs.  This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.    0.941940
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The piece underscores the latest technological innovations and scientific breakthroughs.  This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.    0.925253
+2443                                        Bush, Kerry Economic Budgets Exceed \$1T WASHINGTON - President Bush and Democratic Sen. John Kerry have starkly different economic priorities with a common thread: price tags exceeding \$1 trillion that could pump already huge deficits skyward over the next decade...       This text focuses exclusively on international affairs and diplomatic interactions.  This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.    0.863546
+1211     Porn producers face severe punishment Those who are engaged in the profit-oriented production and dissemination of pornographic materials through the Internet, mobile communication terminals and  quot;phone-sex quot; services in China are subject to punishment as severe as life imprisonment, according   The piece underscores the latest technological innovations and scientific breakthroughs.  This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.    0.863071
+2732                                        Hackers take advantage of Microsoft #39;s JPEG flaw NEW YORK - In a harbinger of security threats to come, hackers have exploited a newly announced flaw in Microsoft Corp. programs and begun circulating malicious code hidden in images that use the popular JPEG format.  The piece underscores the latest technological innovations and scientific breakthroughs.  This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.    0.860898
+
+            
+Common Error Patterns:
+This text focuses exclusively on international affairs and diplomatic interactions. → This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.: 684
+The piece underscores the latest technological innovations and scientific breakthroughs. → This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.: 647
+This text focuses exclusively on international affairs and diplomatic interactions. → The content highlights competitive sports, teams, and individual athlete accomplishments.: 58
+The content highlights competitive sports, teams, and individual athlete accomplishments. → This article provides in-depth coverage of business strategies, financial predictions, and economic analysis.: 34
+The piece underscores the latest technological innovations and scientific breakthroughs. → The content highlights competitive sports, teams, and individual athlete accomplishments.: 27
+This article provides in-depth coverage of business strategies, financial predictions, and economic analysis. → The content highlights competitive sports, teams, and individual athlete accomplishments.: 7
+This article provides in-depth coverage of business strategies, financial predictions, and economic analysis. → The piece underscores the latest technological innovations and scientific breakthroughs.: 7
+This text focuses exclusively on international affairs and diplomatic interactions. → The piece underscores the latest technological innovations and scientific breakthroughs.: 2
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This text is centered around international relations and diplomatic activities.", 1: "The content emphasizes athletic competitions, team dynamics, and athlete achievements.", 2: "This article delves into corporate strategies, market forecasts, and economic insights.", 3: "The piece highlights recent technological advancements and scientific discoveries."}
+
+Iteration 10: Current label prompts:
+0: "This text is centered around international relations and diplomatic activities."
+1: "The content emphasizes athletic competitions, team dynamics, and athlete achievements."
+2: "This article delves into corporate strategies, market forecasts, and economic insights."
+3: "The piece highlights recent technological advancements and scientific discoveries."
+100%
+ 3000/3000 [02:52<00:00, 20.99it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is centered around international relations and diplomatic activities.', 1: 'The content emphasizes athletic competitions, team dynamics, and athlete achievements.', 2: 'This article delves into corporate strategies, market forecasts, and economic insights.', 3: 'The piece highlights recent technological advancements and scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is centered around international relations and diplomatic activities.', 'The content emphasizes athletic competitions, team dynamics, and athlete achievements.', 'This article delves into corporate strategies, market forecasts, and economic insights.', 'The piece highlights recent technological advancements and scientific discoveries.']
+
+Overall Accuracy: 59.30%
+
+Per-class Performance:
+                                                                                         precision    recall  f1-score   support
+
+ The content emphasizes athletic competitions, team dynamics, and athlete achievements.       0.92      0.79      0.85       775
+     The piece highlights recent technological advancements and scientific discoveries.       0.88      0.16      0.28       776
+This article delves into corporate strategies, market forecasts, and economic insights.       0.38      0.90      0.54       702
+        This text is centered around international relations and diplomatic activities.       0.76      0.54      0.63       747
+
+                                                                               accuracy                           0.59      3000
+                                                                              macro avg       0.74      0.60      0.57      3000
+                                                                           weighted avg       0.74      0.59      0.57      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                          true_label                                                                          predicted_label  confidence
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The piece highlights recent technological advancements and scientific discoveries.  This article delves into corporate strategies, market forecasts, and economic insights.    0.914651
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece highlights recent technological advancements and scientific discoveries.  This article delves into corporate strategies, market forecasts, and economic insights.    0.898923
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece highlights recent technological advancements and scientific discoveries.  This article delves into corporate strategies, market forecasts, and economic insights.    0.894185
+...
+0: "This text focuses on international diplomacy and relations between nations."
+1: "The content is about athletic events, sports teams, and the achievements of athletes."
+2: "This article explores business strategies, financial predictions, and economic analysis."
+3: "The piece concentrates on cutting-edge technology and scientific breakthroughs."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:31<00:00, 26.22it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text focuses on international diplomacy and relations between nations.', 1: 'The content is about athletic events, sports teams, and the achievements of athletes.', 2: 'This article explores business strategies, financial predictions, and economic analysis.', 3: 'The piece concentrates on cutting-edge technology and scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text focuses on international diplomacy and relations between nations.', 'The content is about athletic events, sports teams, and the achievements of athletes.', 'This article explores business strategies, financial predictions, and economic analysis.', 'The piece concentrates on cutting-edge technology and scientific breakthroughs.']
+
+Overall Accuracy: 62.83%
+
+Per-class Performance:
+                                                                                          precision    recall  f1-score   support
+
+   The content is about athletic events, sports teams, and the achievements of athletes.       0.95      0.95      0.95       775
+         The piece concentrates on cutting-edge technology and scientific breakthroughs.       0.85      0.23      0.37       776
+This article explores business strategies, financial predictions, and economic analysis.       0.40      0.93      0.56       702
+             This text focuses on international diplomacy and relations between nations.       0.81      0.43      0.56       747
+
+                                                                                accuracy                           0.63      3000
+                                                                               macro avg       0.75      0.63      0.61      3000
+                                                                            weighted avg       0.76      0.63      0.61      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                       true_label                                                                           predicted_label  confidence
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The piece concentrates on cutting-edge technology and scientific breakthroughs.  This article explores business strategies, financial predictions, and economic analysis.    0.931313
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The piece concentrates on cutting-edge technology and scientific breakthroughs.  This article explores business strategies, financial predictions, and economic analysis.    0.917457
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece concentrates on cutting-edge technology and scientific breakthroughs.  This article explores business strategies, financial predictions, and economic analysis.    0.909005
+...
+0: "This text examines diplomatic relations and international policies between countries."
+1: "The content highlights athletic competitions, team performances, and athlete accomplishments."
+2: "This article delves into corporate strategies, market forecasts, and economic insights."
+3: "The piece focuses on technological innovations and scientific advancements."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:27<00:00, 25.88it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text examines diplomatic relations and international policies between countries.', 1: 'The content highlights athletic competitions, team performances, and athlete accomplishments.', 2: 'This article delves into corporate strategies, market forecasts, and economic insights.', 3: 'The piece focuses on technological innovations and scientific advancements.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text examines diplomatic relations and international policies between countries.', 'The content highlights athletic competitions, team performances, and athlete accomplishments.', 'This article delves into corporate strategies, market forecasts, and economic insights.', 'The piece focuses on technological innovations and scientific advancements.']
+
+Overall Accuracy: 59.17%
+
+Per-class Performance:
+                                                                                               precision    recall  f1-score   support
+
+The content highlights athletic competitions, team performances, and athlete accomplishments.       0.81      0.90      0.85       775
+                  The piece focuses on technological innovations and scientific advancements.       0.81      0.13      0.22       776
+      This article delves into corporate strategies, market forecasts, and economic insights.       0.40      0.86      0.54       702
+        This text examines diplomatic relations and international policies between countries.       0.75      0.50      0.60       747
+
+                                                                                     accuracy                           0.59      3000
+                                                                                    macro avg       0.69      0.60      0.56      3000
+                                                                                 weighted avg       0.70      0.59      0.55      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                   true_label                                                                          predicted_label  confidence
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece focuses on technological innovations and scientific advancements.  This article delves into corporate strategies, market forecasts, and economic insights.    0.884963
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The piece focuses on technological innovations and scientific advancements.  This article delves into corporate strategies, market forecasts, and economic insights.    0.875323
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The piece focuses on technological innovations and scientific advancements.  This article delves into corporate strategies, market forecasts, and economic insights.    0.844812
+...
+0: "This text is centered on diplomatic relations and international policies between nations."
+1: "The content centers around athletic competitions, team achievements, and athlete successes."
+2: "This article provides insights into corporate strategies, market trends, and economic analyses."
+3: "The piece highlights technological innovations and scientific breakthroughs."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [01:58<00:00, 26.63it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is centered on diplomatic relations and international policies between nations.', 1: 'The content centers around athletic competitions, team achievements, and athlete successes.', 2: 'This article provides insights into corporate strategies, market trends, and economic analyses.', 3: 'The piece highlights technological innovations and scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is centered on diplomatic relations and international policies between nations.', 'The content centers around athletic competitions, team achievements, and athlete successes.', 'This article provides insights into corporate strategies, market trends, and economic analyses.', 'The piece highlights technological innovations and scientific breakthroughs.']
+
+Overall Accuracy: 50.97%
+
+Per-class Performance:
+                                                                                                 precision    recall  f1-score   support
+
+    The content centers around athletic competitions, team achievements, and athlete successes.       0.94      0.77      0.85       775
+                   The piece highlights technological innovations and scientific breakthroughs.       0.86      0.10      0.18       776
+This article provides insights into corporate strategies, market trends, and economic analyses.       0.33      0.98      0.49       702
+      This text is centered on diplomatic relations and international policies between nations.       0.88      0.23      0.36       747
+
+                                                                                       accuracy                           0.51      3000
+                                                                                      macro avg       0.75      0.52      0.47      3000
+                                                                                   weighted avg       0.76      0.51      0.47      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                    true_label                                                                                  predicted_label  confidence
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The piece highlights technological innovations and scientific breakthroughs.  This article provides insights into corporate strategies, market trends, and economic analyses.    0.900535
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The piece highlights technological innovations and scientific breakthroughs.  This article provides insights into corporate strategies, market trends, and economic analyses.    0.892747
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece highlights technological innovations and scientific breakthroughs.  This article provides insights into corporate strategies, market trends, and economic analyses.    0.888334
+...
+0: "This text focuses on diplomatic relations and international policy issues between countries."
+1: "The content revolves around athletic events, team accomplishments, and athlete triumphs."
+2: "This article delves into business strategies, industry trends, and financial analysis."
+3: "The piece emphasizes technological advancements and scientific discoveries."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:29<00:00, 26.77it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text focuses on diplomatic relations and international policy issues between countries.', 1: 'The content revolves around athletic events, team accomplishments, and athlete triumphs.', 2: 'This article delves into business strategies, industry trends, and financial analysis.', 3: 'The piece emphasizes technological advancements and scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text focuses on diplomatic relations and international policy issues between countries.', 'The content revolves around athletic events, team accomplishments, and athlete triumphs.', 'This article delves into business strategies, industry trends, and financial analysis.', 'The piece emphasizes technological advancements and scientific discoveries.']
+
+Overall Accuracy: 61.40%
+
+Per-class Performance:
+                                                                                              precision    recall  f1-score   support
+
+    The content revolves around athletic events, team accomplishments, and athlete triumphs.       0.88      0.95      0.92       775
+                 The piece emphasizes technological advancements and scientific discoveries.       0.86      0.11      0.20       776
+      This article delves into business strategies, industry trends, and financial analysis.       0.40      0.93      0.56       702
+This text focuses on diplomatic relations and international policy issues between countries.       0.81      0.49      0.61       747
+
+                                                                                    accuracy                           0.61      3000
+                                                                                   macro avg       0.74      0.62      0.57      3000
+                                                                                weighted avg       0.75      0.61      0.57      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                                    true_label                                                                           predicted_label  confidence
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.                   The piece emphasizes technological advancements and scientific discoveries.    This article delves into business strategies, industry trends, and financial analysis.    0.936702
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.                   The piece emphasizes technological advancements and scientific discoveries.    This article delves into business strategies, industry trends, and financial analysis.    0.925939
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.                   The piece emphasizes technological advancements and scientific discoveries.    This article delves into business strategies, industry trends, and financial analysis.    0.919642
+...
+0: "This text centers on diplomatic relations and international policy issues between nations."
+1: "The content is centered around athletic events, team successes, and athlete achievements."
+2: "This article examines business strategies, industry trends, and financial market analysis."
+3: "The piece highlights technological innovations and scientific breakthroughs."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:40<00:00, 10.47it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text centers on diplomatic relations and international policy issues between nations.', 1: 'The content is centered around athletic events, team successes, and athlete achievements.', 2: 'This article examines business strategies, industry trends, and financial market analysis.', 3: 'The piece highlights technological innovations and scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text centers on diplomatic relations and international policy issues between nations.', 'The content is centered around athletic events, team successes, and athlete achievements.', 'This article examines business strategies, industry trends, and financial market analysis.', 'The piece highlights technological innovations and scientific breakthroughs.']
+
+Overall Accuracy: 58.37%
+
+Per-class Performance:
+                                                                                            precision    recall  f1-score   support
+
+ The content is centered around athletic events, team successes, and athlete achievements.       0.93      0.90      0.91       775
+              The piece highlights technological innovations and scientific breakthroughs.       0.88      0.14      0.24       776
+This article examines business strategies, industry trends, and financial market analysis.       0.37      0.96      0.54       702
+This text centers on diplomatic relations and international policy issues between nations.       0.86      0.36      0.51       747
+
+                                                                                  accuracy                           0.58      3000
+                                                                                 macro avg       0.76      0.59      0.55      3000
+                                                                              weighted avg       0.77      0.58      0.55      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                                  true_label                                                                             predicted_label  confidence
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.                The piece highlights technological innovations and scientific breakthroughs.  This article examines business strategies, industry trends, and financial market analysis.    0.893503
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant                 The piece highlights technological innovations and scientific breakthroughs.  This article examines business strategies, industry trends, and financial market analysis.    0.881248
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.                The piece highlights technological innovations and scientific breakthroughs.  This article examines business strategies, industry trends, and financial market analysis.    0.869439
+...
+0: "This text discusses diplomatic relations and international policy issues."
+1: "The content focuses on athletic events, team achievements, and athlete performances."
+2: "This article delves into business strategies, industry trends, and financial market analysis."
+3: "The piece emphasizes technological advancements and scientific discoveries."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:33<00:00, 26.42it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text discusses diplomatic relations and international policy issues.', 1: 'The content focuses on athletic events, team achievements, and athlete performances.', 2: 'This article delves into business strategies, industry trends, and financial market analysis.', 3: 'The piece emphasizes technological advancements and scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text discusses diplomatic relations and international policy issues.', 'The content focuses on athletic events, team achievements, and athlete performances.', 'This article delves into business strategies, industry trends, and financial market analysis.', 'The piece emphasizes technological advancements and scientific discoveries.']
+
+Overall Accuracy: 59.87%
+
+Per-class Performance:
+                                                                                               precision    recall  f1-score   support
+
+         The content focuses on athletic events, team achievements, and athlete performances.       0.92      0.92      0.92       775
+                  The piece emphasizes technological advancements and scientific discoveries.       0.85      0.10      0.18       776
+This article delves into business strategies, industry trends, and financial market analysis.       0.39      0.94      0.55       702
+                    This text discusses diplomatic relations and international policy issues.       0.77      0.46      0.58       747
+
+                                                                                     accuracy                           0.60      3000
+                                                                                    macro avg       0.73      0.61      0.56      3000
+                                                                                 weighted avg       0.74      0.60      0.56      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                   true_label                                                                                predicted_label  confidence
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece emphasizes technological advancements and scientific discoveries.  This article delves into business strategies, industry trends, and financial market analysis.    0.914058
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece emphasizes technological advancements and scientific discoveries.  This article delves into business strategies, industry trends, and financial market analysis.    0.895866
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The piece emphasizes technological advancements and scientific discoveries.  This article delves into business strategies, industry trends, and financial market analysis.    0.893592
+...
+0: "This text examines diplomatic relations and international policy matters."
+1: "The content highlights athletic events, team successes, and athlete performances."
+2: "This article explores business strategies, industry trends, and market analysis."
+3: "The piece focuses on technological innovations and scientific breakthroughs."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:31<00:00, 24.10it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text examines diplomatic relations and international policy matters.', 1: 'The content highlights athletic events, team successes, and athlete performances.', 2: 'This article explores business strategies, industry trends, and market analysis.', 3: 'The piece focuses on technological innovations and scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text examines diplomatic relations and international policy matters.', 'The content highlights athletic events, team successes, and athlete performances.', 'This article explores business strategies, industry trends, and market analysis.', 'The piece focuses on technological innovations and scientific breakthroughs.']
+
+Overall Accuracy: 58.40%
+
+Per-class Performance:
+                                                                                   precision    recall  f1-score   support
+
+The content highlights athletic events, team successes, and athlete performances.       0.85      0.91      0.88       775
+     The piece focuses on technological innovations and scientific breakthroughs.       0.82      0.09      0.16       776
+ This article explores business strategies, industry trends, and market analysis.       0.38      0.93      0.54       702
+        This text examines diplomatic relations and international policy matters.       0.85      0.43      0.57       747
+
+                                                                         accuracy                           0.58      3000
+                                                                        macro avg       0.73      0.59      0.54      3000
+                                                                     weighted avg       0.74      0.58      0.54      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                             text                                                                    true_label                                                                    predicted_label  confidence
+233                                                                                                                                                              NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece focuses on technological innovations and scientific breakthroughs.   This article explores business strategies, industry trends, and market analysis.    0.871978
+348                                                                                                                                Unknown Nesterenko Makes World Headlines (Reuters) Reuters - Belarus' Yuliya Nesterenko won the top\women's athletics gold medal at the Olympics on Saturday,\triumphing over a field stripped of many big names because of\doping woes to win the 100 meters.     This text examines diplomatic relations and international policy matters.  The content highlights athletic events, team successes, and athlete performances.    0.866943
+2589                                                                                                                             Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece focuses on technological innovations and scientific breakthroughs.   This article explores business strategies, industry trends, and market analysis.    0.861334
+...
+0: "This text is centered on diplomatic relations and international policy analysis."
+1: "The content is dedicated to athletic events, athlete performances, and team achievements."
+2: "This article delves into business strategies, market trends, and industry insights."
+3: "The piece concentrates on technological advancements and scientific discoveries."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:28<00:00, 26.50it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is centered on diplomatic relations and international policy analysis.', 1: 'The content is dedicated to athletic events, athlete performances, and team achievements.', 2: 'This article delves into business strategies, market trends, and industry insights.', 3: 'The piece concentrates on technological advancements and scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is centered on diplomatic relations and international policy analysis.', 'The content is dedicated to athletic events, athlete performances, and team achievements.', 'This article delves into business strategies, market trends, and industry insights.', 'The piece concentrates on technological advancements and scientific discoveries.']
+
+Overall Accuracy: 55.93%
+
+Per-class Performance:
+                                                                                           precision    recall  f1-score   support
+
+The content is dedicated to athletic events, athlete performances, and team achievements.       0.87      0.91      0.89       775
+         The piece concentrates on technological advancements and scientific discoveries.       0.82      0.07      0.13       776
+      This article delves into business strategies, market trends, and industry insights.       0.36      0.95      0.53       702
+         This text is centered on diplomatic relations and international policy analysis.       0.87      0.34      0.49       747
+
+                                                                                 accuracy                           0.56      3000
+                                                                                macro avg       0.73      0.57      0.51      3000
+                                                                             weighted avg       0.74      0.56      0.51      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                  text                                                                        true_label                                                                      predicted_label  confidence
+2589  Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece concentrates on technological advancements and scientific discoveries.  This article delves into business strategies, market trends, and industry insights.    0.926423
+233                                   NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece concentrates on technological advancements and scientific discoveries.  This article delves into business strategies, market trends, and industry insights.    0.922445
+2286                            Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece concentrates on technological advancements and scientific discoveries.  This article delves into business strategies, market trends, and industry insights.    0.913235
+...
+0: "This text focuses on diplomatic relations and international policy analysis."
+1: "The content highlights athletic events, athlete performances, and team achievements."
+2: "This article explores business strategies, market trends, and industry insights."
+3: "The piece examines technological advancements and scientific discoveries."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:29<00:00, 26.62it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text focuses on diplomatic relations and international policy analysis.', 1: 'The content highlights athletic events, athlete performances, and team achievements.', 2: 'This article explores business strategies, market trends, and industry insights.', 3: 'The piece examines technological advancements and scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text focuses on diplomatic relations and international policy analysis.', 'The content highlights athletic events, athlete performances, and team achievements.', 'This article explores business strategies, market trends, and industry insights.', 'The piece examines technological advancements and scientific discoveries.']
+
+Overall Accuracy: 56.07%
+
+Per-class Performance:
+                                                                                      precision    recall  f1-score   support
+
+The content highlights athletic events, athlete performances, and team achievements.       0.91      0.87      0.89       775
+           The piece examines technological advancements and scientific discoveries.       0.83      0.10      0.18       776
+    This article explores business strategies, market trends, and industry insights.       0.36      0.96      0.52       702
+        This text focuses on diplomatic relations and international policy analysis.       0.89      0.35      0.50       747
+
+                                                                            accuracy                           0.56      3000
+                                                                           macro avg       0.75      0.57      0.52      3000
+                                                                        weighted avg       0.76      0.56      0.52      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                 true_label                                                                   predicted_label  confidence
+2286                                                                              Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece examines technological advancements and scientific discoveries.  This article explores business strategies, market trends, and industry insights.    0.892969
+2589                                                    Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece examines technological advancements and scientific discoveries.  This article explores business strategies, market trends, and industry insights.    0.887107
+233                                                                                     NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece examines technological advancements and scientific discoveries.  This article explores business strategies, market trends, and industry insights.    0.883645
+...
+0: "This text delves into diplomatic relations and international policy analysis."
+1: "The content is centered around athletic events, athlete performances, and team achievements."
+2: "This article provides insights into business strategies, market trends, and industry developments."
+3: "The piece focuses on technological advancements and scientific innovations."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:30<00:00, 26.31it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text delves into diplomatic relations and international policy analysis.', 1: 'The content is centered around athletic events, athlete performances, and team achievements.', 2: 'This article provides insights into business strategies, market trends, and industry developments.', 3: 'The piece focuses on technological advancements and scientific innovations.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text delves into diplomatic relations and international policy analysis.', 'The content is centered around athletic events, athlete performances, and team achievements.', 'This article provides insights into business strategies, market trends, and industry developments.', 'The piece focuses on technological advancements and scientific innovations.']
+
+Overall Accuracy: 53.53%
+
+Per-class Performance:
+                                                                                                    precision    recall  f1-score   support
+
+      The content is centered around athletic events, athlete performances, and team achievements.       0.94      0.78      0.86       775
+                       The piece focuses on technological advancements and scientific innovations.       0.87      0.05      0.10       776
+This article provides insights into business strategies, market trends, and industry developments.       0.34      0.97      0.51       702
+                     This text delves into diplomatic relations and international policy analysis.       0.87      0.37      0.52       747
+
+                                                                                          accuracy                           0.54      3000
+                                                                                         macro avg       0.76      0.54      0.50      3000
+                                                                                      weighted avg       0.77      0.54      0.49      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                  text                                                                   true_label                                                                                     predicted_label  confidence
+2006                                                 Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  The piece focuses on technological advancements and scientific innovations.  This article provides insights into business strategies, market trends, and industry developments.    0.928442
+2589  Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece focuses on technological advancements and scientific innovations.  This article provides insights into business strategies, market trends, and industry developments.    0.921107
+233                                   NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece focuses on technological advancements and scientific innovations.  This article provides insights into business strategies, market trends, and industry developments.    0.921008
+...
+0: "This text examines diplomatic relations and international policy."
+1: "The content highlights athletic events, athlete performances, and team successes."
+2: "This article explores business strategies, market trends, and industry growth."
+3: "The piece reports on technological innovations and scientific developments."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:35<00:00, 10.40it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text examines diplomatic relations and international policy.', 1: 'The content highlights athletic events, athlete performances, and team successes.', 2: 'This article explores business strategies, market trends, and industry growth.', 3: 'The piece reports on technological innovations and scientific developments.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text examines diplomatic relations and international policy.', 'The content highlights athletic events, athlete performances, and team successes.', 'This article explores business strategies, market trends, and industry growth.', 'The piece reports on technological innovations and scientific developments.']
+
+Overall Accuracy: 58.90%
+
+Per-class Performance:
+                                                                                   precision    recall  f1-score   support
+
+The content highlights athletic events, athlete performances, and team successes.       0.87      0.91      0.89       775
+      The piece reports on technological innovations and scientific developments.       0.84      0.14      0.25       776
+   This article explores business strategies, market trends, and industry growth.       0.38      0.92      0.54       702
+                This text examines diplomatic relations and international policy.       0.85      0.41      0.55       747
+
+                                                                         accuracy                           0.59      3000
+                                                                        macro avg       0.74      0.60      0.56      3000
+                                                                     weighted avg       0.74      0.59      0.56      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                             text                                                                   true_label                                                                 predicted_label  confidence
+2589                                                                                                                             Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece reports on technological innovations and scientific developments.  This article explores business strategies, market trends, and industry growth.    0.898643
+1187                                                                                                       The Lowdown on Downloading Music The digital music space is changing, with more songs and a growing number of places to download music legally. Realizing that the time was ripe to see how we were doing, I took some song recommendations and sat down to see what I could download.  The piece reports on technological innovations and scientific developments.  This article explores business strategies, market trends, and industry growth.    0.882183
+2286                                                                                                                                                       Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece reports on technological innovations and scientific developments.  This article explores business strategies, market trends, and industry growth.    0.880557
+...
+0: "This text delves into diplomatic relations and international policy."
+1: "The content focuses on athletic events, athlete performances, and team successes."
+2: "This article analyzes business strategies, market trends, and industry growth."
+3: "The piece details technological innovations and scientific advancements."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:35<00:00, 24.86it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text delves into diplomatic relations and international policy.', 1: 'The content focuses on athletic events, athlete performances, and team successes.', 2: 'This article analyzes business strategies, market trends, and industry growth.', 3: 'The piece details technological innovations and scientific advancements.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text delves into diplomatic relations and international policy.', 'The content focuses on athletic events, athlete performances, and team successes.', 'This article analyzes business strategies, market trends, and industry growth.', 'The piece details technological innovations and scientific advancements.']
+
+Overall Accuracy: 55.80%
+
+Per-class Performance:
+                                                                                   precision    recall  f1-score   support
+
+The content focuses on athletic events, athlete performances, and team successes.       0.94      0.86      0.90       775
+         The piece details technological innovations and scientific advancements.       0.81      0.09      0.16       776
+   This article analyzes business strategies, market trends, and industry growth.       0.35      0.93      0.51       702
+             This text delves into diplomatic relations and international policy.       0.82      0.38      0.52       747
+
+                                                                         accuracy                           0.56      3000
+                                                                        macro avg       0.73      0.57      0.52      3000
+                                                                     weighted avg       0.74      0.56      0.52      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                             text                                                                true_label                                                                 predicted_label  confidence
+2589                                                                                                                             Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece details technological innovations and scientific advancements.  This article analyzes business strategies, market trends, and industry growth.    0.890208
+1015                                                                                                                                                             Internet Explorer Wins the Battle There #39;s a remarkable graph on Google #39;s Zeitgeist site showing the meteoric rise of Microsoft Internet Explorer 6 use and equally catastrophic decline of all other competing browsers.  The piece details technological innovations and scientific advancements.  This article analyzes business strategies, market trends, and industry growth.    0.872799
+2286                                                                                                                                                       Study: MP3 Player Market Booming Sales of portable digital-audio players are booming, and IDC predicts the market will generate \$58 billion by 2008. The research firm says Apple #39;s iPod will continue to be a major participant   The piece details technological innovations and scientific advancements.  This article analyzes business strategies, market trends, and industry growth.    0.870041
+...
+0: "This text examines diplomatic relations and international policy issues."
+1: "The content highlights athletic events, athlete achievements, and team triumphs."
+2: "This article explores business strategies, market trends, and industry growth patterns."
+3: "The piece provides insights into technological innovations and scientific breakthroughs."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:33<00:00, 26.52it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text examines diplomatic relations and international policy issues.', 1: 'The content highlights athletic events, athlete achievements, and team triumphs.', 2: 'This article explores business strategies, market trends, and industry growth patterns.', 3: 'The piece provides insights into technological innovations and scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text examines diplomatic relations and international policy issues.', 'The content highlights athletic events, athlete achievements, and team triumphs.', 'This article explores business strategies, market trends, and industry growth patterns.', 'The piece provides insights into technological innovations and scientific breakthroughs.']
+
+Overall Accuracy: 59.63%
+
+Per-class Performance:
+                                                                                          precision    recall  f1-score   support
+
+        The content highlights athletic events, athlete achievements, and team triumphs.       0.89      0.84      0.86       775
+The piece provides insights into technological innovations and scientific breakthroughs.       0.72      0.21      0.33       776
+ This article explores business strategies, market trends, and industry growth patterns.       0.39      0.90      0.54       702
+                This text examines diplomatic relations and international policy issues.       0.85      0.45      0.59       747
+
+                                                                                accuracy                           0.60      3000
+                                                                               macro avg       0.71      0.60      0.58      3000
+                                                                            weighted avg       0.72      0.60      0.58      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                             text                                                                                true_label                                                                          predicted_label  confidence
+1187                                                                                                       The Lowdown on Downloading Music The digital music space is changing, with more songs and a growing number of places to download music legally. Realizing that the time was ripe to see how we were doing, I took some song recommendations and sat down to see what I could download.  The piece provides insights into technological innovations and scientific breakthroughs.  This article explores business strategies, market trends, and industry growth patterns.    0.883920
+2589                                                                                                                             Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece provides insights into technological innovations and scientific breakthroughs.  This article explores business strategies, market trends, and industry growth patterns.    0.859925
+1015                                                                                                                                                             Internet Explorer Wins the Battle There #39;s a remarkable graph on Google #39;s Zeitgeist site showing the meteoric rise of Microsoft Internet Explorer 6 use and equally catastrophic decline of all other competing browsers.  The piece provides insights into technological innovations and scientific breakthroughs.  This article explores business strategies, market trends, and industry growth patterns.    0.842686
+...
+0: "This text analyzes diplomatic relations and international policy matters."
+1: "The content focuses on athletic events, athlete achievements, and team successes."
+2: "This article delves into business strategies, market trends, and industry expansion patterns."
+3: "The piece offers insights into technological advancements and scientific discoveries."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [01:58<00:00, 24.76it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text analyzes diplomatic relations and international policy matters.', 1: 'The content focuses on athletic events, athlete achievements, and team successes.', 2: 'This article delves into business strategies, market trends, and industry expansion patterns.', 3: 'The piece offers insights into technological advancements and scientific discoveries.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text analyzes diplomatic relations and international policy matters.', 'The content focuses on athletic events, athlete achievements, and team successes.', 'This article delves into business strategies, market trends, and industry expansion patterns.', 'The piece offers insights into technological advancements and scientific discoveries.']
+
+Overall Accuracy: 64.40%
+
+Per-class Performance:
+                                                                                               precision    recall  f1-score   support
+
+            The content focuses on athletic events, athlete achievements, and team successes.       0.94      0.88      0.91       775
+        The piece offers insights into technological advancements and scientific discoveries.       0.77      0.22      0.34       776
+This article delves into business strategies, market trends, and industry expansion patterns.       0.42      0.89      0.57       702
+                    This text analyzes diplomatic relations and international policy matters.       0.83      0.61      0.70       747
+
+                                                                                     accuracy                           0.64      3000
+                                                                                    macro avg       0.74      0.65      0.63      3000
+                                                                                 weighted avg       0.74      0.64      0.63      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                        text                                                                             true_label                                                                                predicted_label  confidence
+2589                        Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece offers insights into technological advancements and scientific discoveries.  This article delves into business strategies, market trends, and industry expansion patterns.    0.890036
+233                                                         NetApp CEO: No Storage Spending Shortfall (TechWeb) TechWeb - Customers are decoupling storage from server purchases, which explains why EMC and NetApp earnings were up and why Sun and HP were flat or down, Warmenhoven says.  The piece offers insights into technological advancements and scientific discoveries.  This article delves into business strategies, market trends, and industry expansion patterns.    0.834064
+1187  The Lowdown on Downloading Music The digital music space is changing, with more songs and a growing number of places to download music legally. Realizing that the time was ripe to see how we were doing, I took some song recommendations and sat down to see what I could download.  The piece offers insights into technological advancements and scientific discoveries.  This article delves into business strategies, market trends, and industry expansion patterns.    0.832416
+...
+0: "This text examines diplomatic relations and international policy issues."
+1: "The content highlights athletic events, athlete achievements, and team accomplishments."
+2: "This article explores business strategies, market trends, and industrial growth patterns."
+3: "The piece provides insights into technological innovations and scientific breakthroughs."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:44<00:00, 22.25it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text examines diplomatic relations and international policy issues.', 1: 'The content highlights athletic events, athlete achievements, and team accomplishments.', 2: 'This article explores business strategies, market trends, and industrial growth patterns.', 3: 'The piece provides insights into technological innovations and scientific breakthroughs.'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text examines diplomatic relations and international policy issues.', 'The content highlights athletic events, athlete achievements, and team accomplishments.', 'This article explores business strategies, market trends, and industrial growth patterns.', 'The piece provides insights into technological innovations and scientific breakthroughs.']
+
+Overall Accuracy: 61.70%
+
+Per-class Performance:
+                                                                                           precision    recall  f1-score   support
+
+  The content highlights athletic events, athlete achievements, and team accomplishments.       0.87      0.92      0.89       775
+ The piece provides insights into technological innovations and scientific breakthroughs.       0.74      0.24      0.37       776
+This article explores business strategies, market trends, and industrial growth patterns.       0.40      0.86      0.55       702
+                 This text examines diplomatic relations and international policy issues.       0.83      0.46      0.59       747
+
+                                                                                 accuracy                           0.62      3000
+                                                                                macro avg       0.71      0.62      0.60      3000
+                                                                             weighted avg       0.72      0.62      0.60      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                        text                                                                                true_label                                                                            predicted_label  confidence
+1015                                                        Internet Explorer Wins the Battle There #39;s a remarkable graph on Google #39;s Zeitgeist site showing the meteoric rise of Microsoft Internet Explorer 6 use and equally catastrophic decline of all other competing browsers.  The piece provides insights into technological innovations and scientific breakthroughs.  This article explores business strategies, market trends, and industrial growth patterns.    0.817326
+1187  The Lowdown on Downloading Music The digital music space is changing, with more songs and a growing number of places to download music legally. Realizing that the time was ripe to see how we were doing, I took some song recommendations and sat down to see what I could download.  The piece provides insights into technological innovations and scientific breakthroughs.  This article explores business strategies, market trends, and industrial growth patterns.    0.800029
+2589                        Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   The piece provides insights into technological innovations and scientific breakthroughs.  This article explores business strategies, market trends, and industrial growth patterns.    0.789008
+...
+
+            Using this and the current prompts, generate improved prompts for the labels.(print only in the format described and print nothing else, also the prompts should not be questions, rather they should be assertions)
+            Output format: {0: "prompt0", 1: "prompt1", 2: "prompt2", 3: "prompt3"}
+{0: "This text delves into diplomatic relations and international policy analysis.", 1: "The content focuses on athletic competitions, athlete performances, and team success stories.", 2: "This article investigates business strategies, market dynamics, and industry expansion trends.", 3: "The piece offers perspectives on technological advancements and scientific discoveries."}
