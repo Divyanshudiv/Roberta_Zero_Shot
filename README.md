@@ -1,8 +1,3 @@
-
-Alankrit Singh <f20221186@goa.bits-pilani.ac.in>
-6:08 PM (0 minutes ago)
-to me
-
 # RoBERTa Zero-Shot Classification
 
 This project demonstrates the use of a pre-trained RoBERTa model for zero-shot text classification. Zero-shot classification allows the model to classify text into categories it has not explicitly seen during training by leveraging natural language understanding capabilities.
