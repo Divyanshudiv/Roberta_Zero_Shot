@@ -1,0 +1,734 @@
+
+    Here are the current prompts for labels:
+{0: 'This text discusses global events and international relations.', 1: 'This text focuses on athletic competitions and sporting achievements.', 2: 'This text reports on financial markets, companies, and economic trends.', 3: 'This text covers scientific advancements, technological innovations, and the digital world.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses global events and international relations.', 'This text focuses on athletic competitions and sporting achievements.', 'This text reports on financial markets, companies, and economic trends.', 'This text covers scientific advancements, technological innovations, and the digital world.']
+
+Overall Accuracy: 72.23%
+
+Per-class Performance:
+                                                                                             precision    recall  f1-score   support
+
+This text covers scientific advancements, technological innovations, and the digital world.       0.83      0.60      0.69       776
+                             This text discusses global events and international relations.       0.67      0.68      0.67       747
+                      This text focuses on athletic competitions and sporting achievements.       0.94      0.83      0.88       775
+                    This text reports on financial markets, companies, and economic trends.       0.56      0.79      0.65       702
+
+                                                                                   accuracy                           0.72      3000
+                                                                                  macro avg       0.75      0.72      0.72      3000
+                                                                               weighted avg       0.75      0.72      0.73      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                text                                                                                   true_label                                                          predicted_label  confidence
+2006                                                               Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text covers scientific advancements, technological innovations, and the digital world.  This text reports on financial markets, companies, and economic trends.    0.818662
+654                       Olympics: High-Flying Holm Aims to Defy Science (Reuters) Reuters - Sweden's gold medal-winning high\jumper Stefan Holm reckons he can leap even higher but\scientists say he and other athletes were already close to the\limit of what they can achieve.  This text covers scientific advancements, technological innovations, and the digital world.    This text focuses on athletic competitions and sporting achievements.    0.791888
+1779  Stocks Sink on Coke's Gloomy Forecast NEW YORK - Stocks headed lower Wednesday after beverage giant Coca-Cola Co. issued a gloomy forecast, and a lower-than-expected reading on industrial production for August threw the nation's broader economic outlook into question...                               This text discusses global events and international relations.  This text reports on financial markets, companies, and economic trends.    0.788519
+...
+0: "This text discusses world affairs, politics, and international conflicts."
+1: "This text centers on sports events, athletes, and athletic performance."
+2: "This text provides information about financial markets, business trends, and company news."
+3: "This text explores advancements in science, technology, and the digital landscape."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses world affairs, politics, and international conflicts.', 1: 'This text centers on sports events, athletes, and athletic performance.', 2: 'This text provides information about financial markets, business trends, and company news.', 3: 'This text explores advancements in science, technology, and the digital landscape.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses world affairs, politics, and international conflicts.', 'This text centers on sports events, athletes, and athletic performance.', 'This text provides information about financial markets, business trends, and company news.', 'This text explores advancements in science, technology, and the digital landscape.']
+
+Overall Accuracy: 73.50%
+
+Per-class Performance:
+                                                                                            precision    recall  f1-score   support
+
+                   This text centers on sports events, athletes, and athletic performance.       0.94      0.96      0.95       775
+                 This text discusses world affairs, politics, and international conflicts.       0.83      0.69      0.76       747
+        This text explores advancements in science, technology, and the digital landscape.       0.93      0.39      0.54       776
+This text provides information about financial markets, business trends, and company news.       0.51      0.92      0.66       702
+
+                                                                                  accuracy                           0.73      3000
+                                                                                 macro avg       0.80      0.74      0.73      3000
+                                                                              weighted avg       0.81      0.73      0.73      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                                  true_label                                                                             predicted_label  confidence
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.          This text explores advancements in science, technology, and the digital landscape.  This text provides information about financial markets, business trends, and company news.    0.940437
+1361                                                                                                         Movies in a snap: Netflix and TiVo discuss downloads Bee Staff Writer. The high-tech ground is shifting underfoot again, amid rumblings of a new Silicon Valley alliance that would let owners of TiVo Inc.  This text provides information about financial markets, business trends, and company news.          This text explores advancements in science, technology, and the digital landscape.    0.843886
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.          This text explores advancements in science, technology, and the digital landscape.  This text provides information about financial markets, business trends, and company news.    0.778112
+...
+0: "This text focuses on international relations, global events, and political conflicts."
+1: "This text is about sports competitions, athletes, and athletic achievements."
+2: "This text covers financial markets, business strategies, and company performance."
+3: "This text explores advancements in technology, scientific research, and digital innovations."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text focuses on international relations, global events, and political conflicts.', 1: 'This text is about sports competitions, athletes, and athletic achievements.', 2: 'This text covers financial markets, business strategies, and company performance.', 3: 'This text explores advancements in technology, scientific research, and digital innovations.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text focuses on international relations, global events, and political conflicts.', 'This text is about sports competitions, athletes, and athletic achievements.', 'This text covers financial markets, business strategies, and company performance.', 'This text explores advancements in technology, scientific research, and digital innovations.']
+
+Overall Accuracy: 76.13%
+
+Per-class Performance:
+                                                                                              precision    recall  f1-score   support
+
+           This text covers financial markets, business strategies, and company performance.       0.82      0.50      0.62       702
+This text explores advancements in technology, scientific research, and digital innovations.       0.81      0.68      0.74       776
+       This text focuses on international relations, global events, and political conflicts.       0.59      0.90      0.71       747
+                This text is about sports competitions, athletes, and athletic achievements.       0.94      0.94      0.94       775
+
+                                                                                    accuracy                           0.76      3000
+                                                                                   macro avg       0.79      0.76      0.75      3000
+                                                                                weighted avg       0.79      0.76      0.76      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                text                                                                                    true_label                                                                               predicted_label  confidence
+2006                                               Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores advancements in technology, scientific research, and digital innovations.             This text covers financial markets, business strategies, and company performance.    0.904982
+1361                                                     Movies in a snap: Netflix and TiVo discuss downloads Bee Staff Writer. The high-tech ground is shifting underfoot again, amid rumblings of a new Silicon Valley alliance that would let owners of TiVo Inc.             This text covers financial markets, business strategies, and company performance.  This text explores advancements in technology, scientific research, and digital innovations.    0.851884
+654       Olympics: High-Flying Holm Aims to Defy Science (Reuters) Reuters - Sweden's gold medal-winning high\jumper Stefan Holm reckons he can leap even higher but\scientists say he and other athletes were already close to the\limit of what they can achieve.  This text explores advancements in technology, scientific research, and digital innovations.                  This text is about sports competitions, athletes, and athletic achievements.    0.746943
+...
+0: "This text discusses international affairs, global politics, and conflicts between nations."
+1: "This text is about sports events, athletes' performance, and athletic achievements."
+2: "This text focuses on economic trends, company operations, and financial markets."
+3: "This text covers scientific discoveries, technological advancements, and innovations in digital fields."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses international affairs, global politics, and conflicts between nations.', 1: "This text is about sports events, athletes' performance, and athletic achievements.", 2: 'This text focuses on economic trends, company operations, and financial markets.', 3: 'This text covers scientific discoveries, technological advancements, and innovations in digital fields.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses international affairs, global politics, and conflicts between nations.', "This text is about sports events, athletes' performance, and athletic achievements.", 'This text focuses on economic trends, company operations, and financial markets.', 'This text covers scientific discoveries, technological advancements, and innovations in digital fields.']
+
+Overall Accuracy: 75.63%
+
+Per-class Performance:
+                                                                                                         precision    recall  f1-score   support
+
+This text covers scientific discoveries, technological advancements, and innovations in digital fields.       0.80      0.56      0.66       776
+             This text discusses international affairs, global politics, and conflicts between nations.       0.59      0.84      0.69       747
+                       This text focuses on economic trends, company operations, and financial markets.       0.77      0.65      0.70       702
+                    This text is about sports events, athletes' performance, and athletic achievements.       0.94      0.97      0.95       775
+
+                                                                                               accuracy                           0.76      3000
+                                                                                              macro avg       0.77      0.75      0.75      3000
+                                                                                           weighted avg       0.78      0.76      0.75      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                               true_label                                                                      predicted_label  confidence
+654                                     Olympics: High-Flying Holm Aims to Defy Science (Reuters) Reuters - Sweden's gold medal-winning high\jumper Stefan Holm reckons he can leap even higher but\scientists say he and other athletes were already close to the\limit of what they can achieve.  This text covers scientific discoveries, technological advancements, and innovations in digital fields.  This text is about sports events, athletes' performance, and athletic achievements.    0.800145
+2006                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text covers scientific discoveries, technological advancements, and innovations in digital fields.     This text focuses on economic trends, company operations, and financial markets.    0.764907
+348                                 Unknown Nesterenko Makes World Headlines (Reuters) Reuters - Belarus' Yuliya Nesterenko won the top\women's athletics gold medal at the Olympics on Saturday,\triumphing over a field stripped of many big names because of\doping woes to win the 100 meters.               This text discusses international affairs, global politics, and conflicts between nations.  This text is about sports events, athletes' performance, and athletic achievements.    0.735685
+...
+0: "This text discusses geopolitical events, international relations, and conflicts between nations."
+1: "This text focuses on sporting competitions, athlete performance, and athletic achievements."
+2: "This text analyzes business trends, company financial reports, and market activity."
+3: "This text reports on scientific research, technological advancements, and digital innovations."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses geopolitical events, international relations, and conflicts between nations.', 1: 'This text focuses on sporting competitions, athlete performance, and athletic achievements.', 2: 'This text analyzes business trends, company financial reports, and market activity.', 3: 'This text reports on scientific research, technological advancements, and digital innovations.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses geopolitical events, international relations, and conflicts between nations.', 'This text focuses on sporting competitions, athlete performance, and athletic achievements.', 'This text analyzes business trends, company financial reports, and market activity.', 'This text reports on scientific research, technological advancements, and digital innovations.']
+
+Overall Accuracy: 69.07%
+
+Per-class Performance:
+                                                                                                  precision    recall  f1-score   support
+
+             This text analyzes business trends, company financial reports, and market activity.       0.53      0.81      0.64       702
+This text discusses geopolitical events, international relations, and conflicts between nations.       0.64      0.82      0.72       747
+     This text focuses on sporting competitions, athlete performance, and athletic achievements.       0.94      0.90      0.92       775
+  This text reports on scientific research, technological advancements, and digital innovations.       0.89      0.24      0.38       776
+
+                                                                                        accuracy                           0.69      3000
+                                                                                       macro avg       0.75      0.69      0.66      3000
+                                                                                    weighted avg       0.76      0.69      0.66      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                  text                                                                                        true_label                                                                              predicted_label  confidence
+2006                                                 Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.    This text reports on scientific research, technological advancements, and digital innovations.          This text analyzes business trends, company financial reports, and market activity.    0.881978
+2589  Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business     This text reports on scientific research, technological advancements, and digital innovations.          This text analyzes business trends, company financial reports, and market activity.    0.827022
+702                                                                                                HP Unveils Cavalcade of Consumer Products (PC World) PC World - First TVs, new printers, long-lasting inks, and projectors are targeted\ at living room and office.    This text reports on scientific research, technological advancements, and digital innovations.          This text analyzes business trends, company financial reports, and market activity.    0.758163
+...
+0: "This text covers international relations, political conflicts, diplomacy, and global events."
+1: "This text is about sporting events, athlete performance, competitions, and sports news."
+2: "This text focuses on business activities, company performance, market trends, and financial information."
+3: "This text reports on scientific discoveries, technological advancements, research findings, and innovations in digital technology."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text covers international relations, political conflicts, diplomacy, and global events.', 1: 'This text is about sporting events, athlete performance, competitions, and sports news.', 2: 'This text focuses on business activities, company performance, market trends, and financial information.', 3: 'This text reports on scientific discoveries, technological advancements, research findings, and innovations in digital technology.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text covers international relations, political conflicts, diplomacy, and global events.', 'This text is about sporting events, athlete performance, competitions, and sports news.', 'This text focuses on business activities, company performance, market trends, and financial information.', 'This text reports on scientific discoveries, technological advancements, research findings, and innovations in digital technology.']
+
+Overall Accuracy: 76.33%
+
+Per-class Performance:
+                                                                                                                                    precision    recall  f1-score   support
+
+                                      This text covers international relations, political conflicts, diplomacy, and global events.       0.74      0.75      0.74       747
+                          This text focuses on business activities, company performance, market trends, and financial information.       0.67      0.79      0.72       702
+                                           This text is about sporting events, athlete performance, competitions, and sports news.       0.94      0.97      0.95       775
+This text reports on scientific discoveries, technological advancements, research findings, and innovations in digital technology.       0.69      0.55      0.61       776
+
+                                                                                                                          accuracy                           0.76      3000
+                                                                                                                         macro avg       0.76      0.76      0.76      3000
+                                                                                                                      weighted avg       0.76      0.76      0.76      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                                                                          true_label                                                                                                                     predicted_label  confidence
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text reports on scientific discoveries, technological advancements, research findings, and innovations in digital technology.                            This text focuses on business activities, company performance, market trends, and financial information.    0.949581
+2589                                                    Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   This text reports on scientific discoveries, technological advancements, research findings, and innovations in digital technology.                            This text focuses on business activities, company performance, market trends, and financial information.    0.820159
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  This text reports on scientific discoveries, technological advancements, research findings, and innovations in digital technology.                            This text focuses on business activities, company performance, market trends, and financial information.    0.782001
+...
+0: "This text discusses international relations, global conflicts, diplomatic efforts, and major world events."
+1: "This text covers sporting competitions, athlete performance, sports news, and related discussions."
+2: "This text focuses on business operations, company financial reports, market trends, and economic activities."
+3: "This text describes scientific discoveries, technological advancements, research findings, and innovations in digital technology."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses international relations, global conflicts, diplomatic efforts, and major world events.', 1: 'This text covers sporting competitions, athlete performance, sports news, and related discussions.', 2: 'This text focuses on business operations, company financial reports, market trends, and economic activities.', 3: 'This text describes scientific discoveries, technological advancements, research findings, and innovations in digital technology.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses international relations, global conflicts, diplomatic efforts, and major world events.', 'This text covers sporting competitions, athlete performance, sports news, and related discussions.', 'This text focuses on business operations, company financial reports, market trends, and economic activities.', 'This text describes scientific discoveries, technological advancements, research findings, and innovations in digital technology.']
+
+Overall Accuracy: 72.40%
+
+Per-class Performance:
+                                                                                                                                   precision    recall  f1-score   support
+
+                               This text covers sporting competitions, athlete performance, sports news, and related discussions.       0.69      0.99      0.82       775
+This text describes scientific discoveries, technological advancements, research findings, and innovations in digital technology.       0.76      0.52      0.62       776
+                       This text discusses international relations, global conflicts, diplomatic efforts, and major world events.       0.74      0.72      0.73       747
+                     This text focuses on business operations, company financial reports, market trends, and economic activities.       0.73      0.66      0.69       702
+
+                                                                                                                         accuracy                           0.72      3000
+                                                                                                                        macro avg       0.73      0.72      0.71      3000
+                                                                                                                     weighted avg       0.73      0.72      0.71      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                         true_label                                                                                                                    predicted_label  confidence
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  This text describes scientific discoveries, technological advancements, research findings, and innovations in digital technology.                                 This text covers sporting competitions, athlete performance, sports news, and related discussions.    0.854874
+2006                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text describes scientific discoveries, technological advancements, research findings, and innovations in digital technology.                       This text focuses on business operations, company financial reports, market trends, and economic activities.    0.832385
+584                                          Jones Advances in Long Jump; Johnson Out ATHENS, Greece - Marion Jones made her Athens debut in virtual anonymity, quietly advancing to the long jump final. Allen Johnson had the attention of everyone in the stadium, for all the wrong reasons...                         This text discusses international relations, global conflicts, diplomatic efforts, and major world events.                                 This text covers sporting competitions, athlete performance, sports news, and related discussions.    0.651434
+...
+0: "This text pertains to global politics, international conflicts, diplomacy, and significant world events."
+1: "This text centers on sports competitions, athlete performance, sports news, and related discussions."
+2: "This text delves into business activities, company financial reports, market trends, and economic matters."
+3: "This text focuses on scientific advancements, technological innovations, research findings, and breakthroughs in digital technology."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text pertains to global politics, international conflicts, diplomacy, and significant world events.', 1: 'This text centers on sports competitions, athlete performance, sports news, and related discussions.', 2: 'This text delves into business activities, company financial reports, market trends, and economic matters.', 3: 'This text focuses on scientific advancements, technological innovations, research findings, and breakthroughs in digital technology.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text pertains to global politics, international conflicts, diplomacy, and significant world events.', 'This text centers on sports competitions, athlete performance, sports news, and related discussions.', 'This text delves into business activities, company financial reports, market trends, and economic matters.', 'This text focuses on scientific advancements, technological innovations, research findings, and breakthroughs in digital technology.']
+
+Overall Accuracy: 73.27%
+
+Per-class Performance:
+                                                                                                                                      precision    recall  f1-score   support
+
+                                This text centers on sports competitions, athlete performance, sports news, and related discussions.       0.88      0.97      0.92       775
+                          This text delves into business activities, company financial reports, market trends, and economic matters.       0.63      0.74      0.68       702
+This text focuses on scientific advancements, technological innovations, research findings, and breakthroughs in digital technology.       0.87      0.37      0.52       776
+                            This text pertains to global politics, international conflicts, diplomacy, and significant world events.       0.64      0.86      0.73       747
+
+                                                                                                                            accuracy                           0.73      3000
+                                                                                                                           macro avg       0.76      0.73      0.72      3000
+                                                                                                                        weighted avg       0.76      0.73      0.72      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                                                                            true_label                                                                                             predicted_label  confidence
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text focuses on scientific advancements, technological innovations, research findings, and breakthroughs in digital technology.  This text delves into business activities, company financial reports, market trends, and economic matters.    0.908256
+2589                                                    Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   This text focuses on scientific advancements, technological innovations, research findings, and breakthroughs in digital technology.  This text delves into business activities, company financial reports, market trends, and economic matters.    0.817515
+1140                        Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  This text focuses on scientific advancements, technological innovations, research findings, and breakthroughs in digital technology.        This text centers on sports competitions, athlete performance, sports news, and related discussions.    0.729276
+...
+0: "This text discusses international relations, global conflicts, diplomatic agreements, and major world events."
+1: "This text covers sports competitions, athlete performance, sports news, and related discussions."
+2: "This text focuses on business operations, company financial data, market trends, and economic issues."
+3: "This text explores scientific discoveries, technological advancements, research findings, and breakthroughs in digital technology."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses international relations, global conflicts, diplomatic agreements, and major world events.', 1: 'This text covers sports competitions, athlete performance, sports news, and related discussions.', 2: 'This text focuses on business operations, company financial data, market trends, and economic issues.', 3: 'This text explores scientific discoveries, technological advancements, research findings, and breakthroughs in digital technology.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses international relations, global conflicts, diplomatic agreements, and major world events.', 'This text covers sports competitions, athlete performance, sports news, and related discussions.', 'This text focuses on business operations, company financial data, market trends, and economic issues.', 'This text explores scientific discoveries, technological advancements, research findings, and breakthroughs in digital technology.']
+
+Overall Accuracy: 74.00%
+
+Per-class Performance:
+                                                                                                                                    precision    recall  f1-score   support
+
+                                  This text covers sports competitions, athlete performance, sports news, and related discussions.       0.72      0.99      0.84       775
+                     This text discusses international relations, global conflicts, diplomatic agreements, and major world events.       0.80      0.59      0.68       747
+This text explores scientific discoveries, technological advancements, research findings, and breakthroughs in digital technology.       0.70      0.68      0.69       776
+                             This text focuses on business operations, company financial data, market trends, and economic issues.       0.76      0.69      0.72       702
+
+                                                                                                                          accuracy                           0.74      3000
+                                                                                                                         macro avg       0.75      0.74      0.73      3000
+                                                                                                                      weighted avg       0.75      0.74      0.73      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                          true_label                                                                                                                     predicted_label  confidence
+2006                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores scientific discoveries, technological advancements, research findings, and breakthroughs in digital technology.                               This text focuses on business operations, company financial data, market trends, and economic issues.    0.843705
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  This text explores scientific discoveries, technological advancements, research findings, and breakthroughs in digital technology.                                    This text covers sports competitions, athlete performance, sports news, and related discussions.    0.741548
+806                                           Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advisors to the US Food and Drug Administration.                               This text focuses on business operations, company financial data, market trends, and economic issues.  This text explores scientific discoveries, technological advancements, research findings, and breakthroughs in digital technology.    0.702588
+...
+0: "This text discusses international relations, global conflicts, diplomacy, political events, and major world affairs."
+1: "This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and related discussions."
+2: "This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis."
+3: "This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses international relations, global conflicts, diplomacy, political events, and major world affairs.', 1: 'This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and related discussions.', 2: 'This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.', 3: 'This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses international relations, global conflicts, diplomacy, political events, and major world affairs.', 'This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and related discussions.', 'This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.', 'This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.']
+
+Overall Accuracy: 76.83%
+
+Per-class Performance:
+                                                                                                                                                             precision    recall  f1-score   support
+
+                                This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.       0.75      0.59      0.66       702
+                                       This text discusses international relations, global conflicts, diplomacy, political events, and major world affairs.       0.70      0.81      0.75       747
+This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.       0.77      0.69      0.72       776
+                                       This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and related discussions.       0.85      0.97      0.91       775
+
+                                                                                                                                                   accuracy                           0.77      3000
+                                                                                                                                                  macro avg       0.77      0.76      0.76      3000
+                                                                                                                                               weighted avg       0.77      0.77      0.76      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                                                   true_label                                                                                                                                              predicted_label  confidence
+2006                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.                                  This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.    0.788019
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.                                         This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and related discussions.    0.713679
+806                                           Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advisors to the US Food and Drug Administration.                                  This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.  This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.    0.655704
+...
+0: "This text discusses topics related to international relations, global conflicts, diplomacy, political events, and major world affairs. "
+1: "This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and discussions surrounding sports."
+2: "This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis."
+3: "This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology. "
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses topics related to international relations, global conflicts, diplomacy, political events, and major world affairs. ', 1: 'This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and discussions surrounding sports.', 2: 'This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.', 3: 'This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology. '}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses topics related to international relations, global conflicts, diplomacy, political events, and major world affairs. ', 'This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and discussions surrounding sports.', 'This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.', 'This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology. ']
+
+Overall Accuracy: 65.23%
+
+Per-class Performance:
+                                                                                                                                                              precision    recall  f1-score   support
+
+                                 This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.       0.75      0.36      0.48       702
+                     This text discusses topics related to international relations, global conflicts, diplomacy, political events, and major world affairs.        0.59      0.85      0.69       747
+This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.        0.89      0.41      0.56       776
+                             This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and discussions surrounding sports.       0.61      0.97      0.75       775
+
+                                                                                                                                                    accuracy                           0.65      3000
+                                                                                                                                                   macro avg       0.71      0.65      0.62      3000
+                                                                                                                                                weighted avg       0.71      0.65      0.63      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                                                    true_label                                                                                                                                               predicted_label  confidence
+2006                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.                                    This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.    0.726298
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.                                This text focuses on sports competitions, athlete performance, sports news, teams, leagues, and discussions surrounding sports.    0.691912
+806                                           Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advisors to the US Food and Drug Administration.                                   This text covers business operations, company finances, market trends, economic issues, investments, and industry analysis.  This text explores scientific discoveries, technological advancements, research findings, engineering breakthroughs, and innovations in digital technology.     0.612090
+...
+0: "This text discusses topics related to politics, international relations, war, diplomacy, global events, and world affairs."
+1: "This text focuses on sports competitions, athletes, teams, leagues, sporting news, and discussions about sports."
+2: "This text covers business practices, company performance, finance, market trends, investments, and economic issues."
+3: "This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and developments in digital technology."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses topics related to politics, international relations, war, diplomacy, global events, and world affairs.', 1: 'This text focuses on sports competitions, athletes, teams, leagues, sporting news, and discussions about sports.', 2: 'This text covers business practices, company performance, finance, market trends, investments, and economic issues.', 3: 'This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and developments in digital technology.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses topics related to politics, international relations, war, diplomacy, global events, and world affairs.', 'This text focuses on sports competitions, athletes, teams, leagues, sporting news, and discussions about sports.', 'This text covers business practices, company performance, finance, market trends, investments, and economic issues.', 'This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and developments in digital technology.']
+
+Overall Accuracy: 66.10%
+
+Per-class Performance:
+                                                                                                                                                            precision    recall  f1-score   support
+
+                                       This text covers business practices, company performance, finance, market trends, investments, and economic issues.       0.75      0.42      0.54       702
+                                This text discusses topics related to politics, international relations, war, diplomacy, global events, and world affairs.       0.64      0.85      0.73       747
+This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and developments in digital technology.       0.89      0.38      0.54       776
+                                          This text focuses on sports competitions, athletes, teams, leagues, sporting news, and discussions about sports.       0.59      0.98      0.73       775
+
+                                                                                                                                                  accuracy                           0.66      3000
+                                                                                                                                                 macro avg       0.72      0.66      0.64      3000
+                                                                                                                                              weighted avg       0.72      0.66      0.64      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                                                  true_label                                                                                                                                             predicted_label  confidence
+2521          Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.  This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and developments in digital technology.                                  This text discusses topics related to politics, international relations, war, diplomacy, global events, and world affairs.    0.759323
+2006                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and developments in digital technology.                                         This text covers business practices, company performance, finance, market trends, investments, and economic issues.    0.733433
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and developments in digital technology.                                            This text focuses on sports competitions, athletes, teams, leagues, sporting news, and discussions about sports.    0.692499
+...
+0: "This text discusses topics related to government, international relations, war, diplomacy, global conflicts, and current events."
+1: "This text focuses on competitive sports, athletes, teams, leagues, sporting news, and discussions about sports performance."
+2: "This text covers business practices, company operations, financial markets, investments, and economic trends."
+3: "This text explores scientific discoveries, technological innovations, research findings, engineering advancements, and developments in computer science."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses topics related to government, international relations, war, diplomacy, global conflicts, and current events.', 1: 'This text focuses on competitive sports, athletes, teams, leagues, sporting news, and discussions about sports performance.', 2: 'This text covers business practices, company operations, financial markets, investments, and economic trends.', 3: 'This text explores scientific discoveries, technological innovations, research findings, engineering advancements, and developments in computer science.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses topics related to government, international relations, war, diplomacy, global conflicts, and current events.', 'This text focuses on competitive sports, athletes, teams, leagues, sporting news, and discussions about sports performance.', 'This text covers business practices, company operations, financial markets, investments, and economic trends.', 'This text explores scientific discoveries, technological innovations, research findings, engineering advancements, and developments in computer science.']
+
+Overall Accuracy: 66.47%
+
+Per-class Performance:
+                                                                                                                                                          precision    recall  f1-score   support
+
+                                           This text covers business practices, company operations, financial markets, investments, and economic trends.       0.80      0.29      0.43       702
+                        This text discusses topics related to government, international relations, war, diplomacy, global conflicts, and current events.       0.53      0.90      0.67       747
+This text explores scientific discoveries, technological innovations, research findings, engineering advancements, and developments in computer science.       0.85      0.47      0.61       776
+                             This text focuses on competitive sports, athletes, teams, leagues, sporting news, and discussions about sports performance.       0.72      0.97      0.83       775
+
+                                                                                                                                                accuracy                           0.66      3000
+                                                                                                                                               macro avg       0.72      0.66      0.63      3000
+                                                                                                                                            weighted avg       0.72      0.66      0.64      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              text                                                                                                                                                true_label                                                                                                                   predicted_label  confidence
+2521                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.  This text explores scientific discoveries, technological innovations, research findings, engineering advancements, and developments in computer science.  This text discusses topics related to government, international relations, war, diplomacy, global conflicts, and current events.    0.696250
+2006                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores scientific discoveries, technological innovations, research findings, engineering advancements, and developments in computer science.                     This text covers business practices, company operations, financial markets, investments, and economic trends.    0.602261
+1315                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Briefly: Top McAfee exec to step down roundup Plus:  Samsung to put hard drives in phones...IDC says external disk storage up...Lawmakers to vote on spyware, piracy bills.  This text explores scientific discoveries, technological innovations, research findings, engineering advancements, and developments in computer science.  This text discusses topics related to government, international relations, war, diplomacy, global conflicts, and current events.    0.563762
+...
+0: "This text discusses topics related to politics, international affairs, conflict, diplomacy, and current events."
+1: "This text focuses on competitive sports, athletes, teams, leagues, sporting news, and performance analysis."
+2: "This text covers business practices, company operations, financial markets, investments, and economic trends."
+3: "This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and computer science developments."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses topics related to politics, international affairs, conflict, diplomacy, and current events.', 1: 'This text focuses on competitive sports, athletes, teams, leagues, sporting news, and performance analysis.', 2: 'This text covers business practices, company operations, financial markets, investments, and economic trends.', 3: 'This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and computer science developments.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses topics related to politics, international affairs, conflict, diplomacy, and current events.', 'This text focuses on competitive sports, athletes, teams, leagues, sporting news, and performance analysis.', 'This text covers business practices, company operations, financial markets, investments, and economic trends.', 'This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and computer science developments.']
+
+Overall Accuracy: 68.73%
+
+Per-class Performance:
+                                                                                                                                                       precision    recall  f1-score   support
+
+                                        This text covers business practices, company operations, financial markets, investments, and economic trends.       0.80      0.29      0.43       702
+                                      This text discusses topics related to politics, international affairs, conflict, diplomacy, and current events.       0.48      0.92      0.63       747
+This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and computer science developments.       0.83      0.60      0.70       776
+                                          This text focuses on competitive sports, athletes, teams, leagues, sporting news, and performance analysis.       0.93      0.90      0.92       775
+
+                                                                                                                                             accuracy                           0.69      3000
+                                                                                                                                            macro avg       0.76      0.68      0.67      3000
+                                                                                                                                         weighted avg       0.76      0.69      0.68      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                   text                                                                                                                                             true_label                                                                                                  predicted_label  confidence
+2521                                               Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.  This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and computer science developments.  This text discusses topics related to politics, international affairs, conflict, diplomacy, and current events.    0.758326
+2006                                                                                                                  Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and computer science developments.    This text covers business practices, company operations, financial markets, investments, and economic trends.    0.666165
+293                                          Swap Your PC, or Your President The producer of ads featuring PC users who switched to Macs is applying the same tactic to political commercials. This time, he'll focus on former backers of President Bush, recruited online, who've changed their political allegiance. By Louise Witt.  This text explores scientific discoveries, technological advancements, research findings, engineering innovations, and computer science developments.  This text discusses topics related to politics, international affairs, conflict, diplomacy, and current events.    0.657624
+...
+0: "This text discusses topics related to government, political systems, international relations, war and peace, and current events."
+1: "This text focuses on sports competitions, athletes, teams, leagues, sporting news, and athletic performance."
+2: "This text covers business strategies, company operations, financial markets, investments, and economic trends."
+3: "This text explores scientific research, technological innovations, engineering breakthroughs, and advancements in computer science."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses topics related to government, political systems, international relations, war and peace, and current events.', 1: 'This text focuses on sports competitions, athletes, teams, leagues, sporting news, and athletic performance.', 2: 'This text covers business strategies, company operations, financial markets, investments, and economic trends.', 3: 'This text explores scientific research, technological innovations, engineering breakthroughs, and advancements in computer science.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses topics related to government, political systems, international relations, war and peace, and current events.', 'This text focuses on sports competitions, athletes, teams, leagues, sporting news, and athletic performance.', 'This text covers business strategies, company operations, financial markets, investments, and economic trends.', 'This text explores scientific research, technological innovations, engineering breakthroughs, and advancements in computer science.']
+
+Overall Accuracy: 68.47%
+
+Per-class Performance:
+                                                                                                                                     precision    recall  f1-score   support
+
+                     This text covers business strategies, company operations, financial markets, investments, and economic trends.       0.74      0.42      0.54       702
+   This text discusses topics related to government, political systems, international relations, war and peace, and current events.       0.49      0.91      0.64       747
+This text explores scientific research, technological innovations, engineering breakthroughs, and advancements in computer science.       0.89      0.43      0.58       776
+                       This text focuses on sports competitions, athletes, teams, leagues, sporting news, and athletic performance.       0.88      0.96      0.92       775
+
+                                                                                                                           accuracy                           0.68      3000
+                                                                                                                          macro avg       0.75      0.68      0.67      3000
+                                                                                                                       weighted avg       0.75      0.68      0.67      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                           true_label                                                                                                                   predicted_label  confidence
+2521          Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.  This text explores scientific research, technological innovations, engineering breakthroughs, and advancements in computer science.  This text discusses topics related to government, political systems, international relations, war and peace, and current events.    0.769489
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  This text explores scientific research, technological innovations, engineering breakthroughs, and advancements in computer science.                      This text focuses on sports competitions, athletes, teams, leagues, sporting news, and athletic performance.    0.747160
+1315                                                                                                                   Briefly: Top McAfee exec to step down roundup Plus:  Samsung to put hard drives in phones...IDC says external disk storage up...Lawmakers to vote on spyware, piracy bills.  This text explores scientific research, technological innovations, engineering breakthroughs, and advancements in computer science.  This text discusses topics related to government, political systems, international relations, war and peace, and current events.    0.644559
+...
+0: "This text discusses topics related to government, political systems, international relations, war and peace, current events, legislation, and policies."
+1: "This text focuses on sports competitions, athletes, teams, leagues, sporting news, athletic performance, and specific sports like football, basketball, or soccer."
+2: "This text covers business strategies, company operations, financial markets, investments, economic trends, industries (like technology or retail), and company performance."
+3: "This text explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, and natural phenomena."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'This text discusses topics related to government, political systems, international relations, war and peace, current events, legislation, and policies.', 1: 'This text focuses on sports competitions, athletes, teams, leagues, sporting news, athletic performance, and specific sports like football, basketball, or soccer.', 2: 'This text covers business strategies, company operations, financial markets, investments, economic trends, industries (like technology or retail), and company performance.', 3: 'This text explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, and natural phenomena.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['This text discusses topics related to government, political systems, international relations, war and peace, current events, legislation, and policies.', 'This text focuses on sports competitions, athletes, teams, leagues, sporting news, athletic performance, and specific sports like football, basketball, or soccer.', 'This text covers business strategies, company operations, financial markets, investments, economic trends, industries (like technology or retail), and company performance.', 'This text explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, and natural phenomena.']
+
+Overall Accuracy: 56.27%
+
+Per-class Performance:
+                                                                                                                                                                             precision    recall  f1-score   support
+
+This text covers business strategies, company operations, financial markets, investments, economic trends, industries (like technology or retail), and company performance.       0.53      0.61      0.56       702
+                    This text discusses topics related to government, political systems, international relations, war and peace, current events, legislation, and policies.       0.46      0.87      0.60       747
+   This text explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, and natural phenomena.       0.65      0.26      0.37       776
+         This text focuses on sports competitions, athletes, teams, leagues, sporting news, athletic performance, and specific sports like football, basketball, or soccer.       0.89      0.53      0.66       775
+
+                                                                                                                                                                   accuracy                           0.56      3000
+                                                                                                                                                                  macro avg       0.63      0.57      0.55      3000
+                                                                                                                                                               weighted avg       0.64      0.56      0.55      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              text                                                                                                                                                                true_label                                                                                                                                                              predicted_label  confidence
+2006                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, and natural phenomena.  This text covers business strategies, company operations, financial markets, investments, economic trends, industries (like technology or retail), and company performance.    0.728335
+1315                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Briefly: Top McAfee exec to step down roundup Plus:  Samsung to put hard drives in phones...IDC says external disk storage up...Lawmakers to vote on spyware, piracy bills.  This text explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, and natural phenomena.                      This text discusses topics related to government, political systems, international relations, war and peace, current events, legislation, and policies.    0.724768
+2589                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part of billionaire Sir Richard Bransons sprawling business   This text explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, and natural phenomena.  This text covers business strategies, company operations, financial markets, investments, economic trends, industries (like technology or retail), and company performance.    0.629756
+...
+0: "Determine if this text discusses government policies, international relations, war, or current events."
+1: "Identify if the text focuses on sports, such as competitions, athletes, teams, leagues, or sporting news."
+2: "Classify the text based on whether it covers business topics like strategies, operations, financial markets, investments, or economic trends."
+3: "Analyze the text to determine if it explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, or natural phenomena."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'Determine if this text discusses government policies, international relations, war, or current events.', 1: 'Identify if the text focuses on sports, such as competitions, athletes, teams, leagues, or sporting news.', 2: 'Classify the text based on whether it covers business topics like strategies, operations, financial markets, investments, or economic trends.', 3: 'Analyze the text to determine if it explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, or natural phenomena.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['Determine if this text discusses government policies, international relations, war, or current events.', 'Identify if the text focuses on sports, such as competitions, athletes, teams, leagues, or sporting news.', 'Classify the text based on whether it covers business topics like strategies, operations, financial markets, investments, or economic trends.', 'Analyze the text to determine if it explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, or natural phenomena.']
+
+Overall Accuracy: 45.60%
+
+Per-class Performance:
+                                                                                                                                                                                                   precision    recall  f1-score   support
+
+Analyze the text to determine if it explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, or natural phenomena.       0.34      0.63      0.44       776
+                                                    Classify the text based on whether it covers business topics like strategies, operations, financial markets, investments, or economic trends.       0.57      0.03      0.06       702
+                                                                                           Determine if this text discusses government policies, international relations, war, or current events.       0.68      0.13      0.22       747
+                                                                                        Identify if the text focuses on sports, such as competitions, athletes, teams, leagues, or sporting news.       0.54      0.98      0.70       775
+
+                                                                                                                                                                                         accuracy                           0.46      3000
+                                                                                                                                                                                        macro avg       0.53      0.44      0.36      3000
+                                                                                                                                                                                     weighted avg       0.53      0.46      0.36      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                                                                                         true_label                                                                                                                                                                                    predicted_label  confidence
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  Analyze the text to determine if it explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, or natural phenomena.                                                                                          Identify if the text focuses on sports, such as competitions, athletes, teams, leagues, or sporting news.    0.788802
+2521          Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.  Analyze the text to determine if it explores scientific research, technological innovations, engineering breakthroughs, computer science advancements, medical discoveries, or natural phenomena.                                                                                             Determine if this text discusses government policies, international relations, war, or current events.    0.693106
+2758                                                                                                                                         Cricket: Dubai global academy The International Cricket Council are to open a global cricket academy designed to improve standards of lesser nations.                                                                                             Determine if this text discusses government policies, international relations, war, or current events.                                                                                          Identify if the text focuses on sports, such as competitions, athletes, teams, leagues, or sporting news.    0.612158
+...
+0: "Determine if this text discusses government policies, international relations, war, elections, political events, or current affairs."
+1: "Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, or athletic performance."
+2: "Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, or economic indicators."
+3: "Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, or natural phenomena."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'Determine if this text discusses government policies, international relations, war, elections, political events, or current affairs.', 1: 'Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, or athletic performance.', 2: 'Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, or economic indicators.', 3: 'Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, or natural phenomena.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['Determine if this text discusses government policies, international relations, war, elections, political events, or current affairs.', 'Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, or athletic performance.', 'Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, or economic indicators.', 'Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, or natural phenomena.']
+
+Overall Accuracy: 46.60%
+
+Per-class Performance:
+                                                                                                                                                                                                 precision    recall  f1-score   support
+
+Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, or natural phenomena.       0.32      0.36      0.34       776
+                                                             Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, or athletic performance.       0.47      0.99      0.63       775
+                                                           Determine if this text discusses government policies, international relations, war, elections, political events, or current affairs.       0.66      0.10      0.18       747
+                                                 Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, or economic indicators.       0.75      0.38      0.51       702
+
+                                                                                                                                                                                       accuracy                           0.47      3000
+                                                                                                                                                                                      macro avg       0.55      0.46      0.42      3000
+                                                                                                                                                                                   weighted avg       0.54      0.47      0.42      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                                                                                       true_label                                                                                                                                 predicted_label  confidence
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, or natural phenomena.              Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, or athletic performance.    0.833430
+2521          Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.  Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, or natural phenomena.            Determine if this text discusses government policies, international relations, war, elections, political events, or current affairs.    0.684528
+2006                                                                             Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, or natural phenomena.  Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, or economic indicators.    0.640771
+...
+0: "Determine if this text discusses government policies, political ideologies, international relations, wars, elections, or significant current events."
+1: "Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary."
+2: "Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis."
+3: "Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, natural phenomena, or space exploration."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'Determine if this text discusses government policies, political ideologies, international relations, wars, elections, or significant current events.', 1: 'Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.', 2: 'Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.', 3: 'Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, natural phenomena, or space exploration.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['Determine if this text discusses government policies, political ideologies, international relations, wars, elections, or significant current events.', 'Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.', 'Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.', 'Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, natural phenomena, or space exploration.']
+
+Overall Accuracy: 43.67%
+
+Per-class Performance:
+                                                                                                                                                                                                                    precision    recall  f1-score   support
+
+Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, natural phenomena, or space exploration.       0.41      0.18      0.25       776
+                                                            Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.       0.37      1.00      0.54       775
+                                                              Determine if this text discusses government policies, political ideologies, international relations, wars, elections, or significant current events.       0.69      0.15      0.24       747
+                                                 Identify if the text covers business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.       0.72      0.41      0.52       702
+
+                                                                                                                                                                                                          accuracy                           0.44      3000
+                                                                                                                                                                                                         macro avg       0.55      0.43      0.39      3000
+                                                                                                                                                                                                      weighted avg       0.54      0.44      0.39      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                                                                                                          true_label                                                                                                                                                    predicted_label  confidence
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, natural phenomena, or space exploration.             Classify the text as focusing on sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.    0.848774
+2521          Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.  Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, natural phenomena, or space exploration.               Determine if this text discusses government policies, political ideologies, international relations, wars, elections, or significant current events.    0.689973
+293     Swap Your PC, or Your President The producer of ads featuring PC users who switched to Macs is applying the same tactic to political commercials. This time, he'll focus on former backers of President Bush, recruited online, who've changed their political allegiance. By Louise Witt.  Analyze the text to determine if it explores scientific concepts, technological advancements, engineering projects, computer science developments, medical breakthroughs, natural phenomena, or space exploration.               Determine if this text discusses government policies, political ideologies, international relations, wars, elections, or significant current events.    0.646885
+...
+0: "Determine if this text focuses on government actions, political beliefs or parties, international relations, wars, elections, or major current events."
+1: "Identify if the text discusses sports such as competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary."
+2: "Analyze if the text covers business topics like company strategies, market trends, financial reports, investments, economic indicators, or industry analysis."
+3: "Classify the text based on whether it explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'Determine if this text focuses on government actions, political beliefs or parties, international relations, wars, elections, or major current events.', 1: 'Identify if the text discusses sports such as competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.', 2: 'Analyze if the text covers business topics like company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.', 3: 'Classify the text based on whether it explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['Determine if this text focuses on government actions, political beliefs or parties, international relations, wars, elections, or major current events.', 'Identify if the text discusses sports such as competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.', 'Analyze if the text covers business topics like company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.', 'Classify the text based on whether it explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.']
+
+Overall Accuracy: 55.63%
+
+Per-class Performance:
+                                                                                                                                                                                                         precision    recall  f1-score   support
+
+                                          Analyze if the text covers business topics like company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.       0.45      0.74      0.56       702
+Classify the text based on whether it explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.       0.71      0.21      0.33       776
+                                                 Determine if this text focuses on government actions, political beliefs or parties, international relations, wars, elections, or major current events.       0.43      0.31      0.36       747
+                                                      Identify if the text discusses sports such as competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.       0.70      0.97      0.81       775
+
+                                                                                                                                                                                               accuracy                           0.56      3000
+                                                                                                                                                                                              macro avg       0.57      0.56      0.52      3000
+                                                                                                                                                                                           weighted avg       0.58      0.56      0.52      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                                                                                                                               true_label                                                                                                                                         predicted_label  confidence
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  Classify the text based on whether it explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.       Identify if the text discusses sports such as competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.    0.730940
+2521          Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.  Classify the text based on whether it explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.  Determine if this text focuses on government actions, political beliefs or parties, international relations, wars, elections, or major current events.    0.715761
+293     Swap Your PC, or Your President The producer of ads featuring PC users who switched to Macs is applying the same tactic to political commercials. This time, he'll focus on former backers of President Bush, recruited online, who've changed their political allegiance. By Louise Witt.  Classify the text based on whether it explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.  Determine if this text focuses on government actions, political beliefs or parties, international relations, wars, elections, or major current events.    0.701499
+...
+0: "Determine if this text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events."
+1: "Classify the text based on whether it focuses on business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis."
+2: "Identify if the text explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration."
+3: "Determine if this text is primarily about sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'Determine if this text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.', 1: 'Classify the text based on whether it focuses on business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.', 2: 'Identify if the text explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.', 3: 'Determine if this text is primarily about sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['Determine if this text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.', 'Classify the text based on whether it focuses on business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.', 'Identify if the text explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.', 'Determine if this text is primarily about sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.']
+
+Overall Accuracy: 26.93%
+
+Per-class Performance:
+                                                                                                                                                                                        precision    recall  f1-score   support
+
+Classify the text based on whether it focuses on business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.       0.03      0.00      0.00       775
+                            Determine if this text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.       0.75      0.10      0.17       747
+                       Determine if this text is primarily about sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.       0.24      0.45      0.31       776
+Identify if the text explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.       0.28      0.55      0.37       702
+
+                                                                                                                                                                              accuracy                           0.27      3000
+                                                                                                                                                                             macro avg       0.32      0.27      0.21      3000
+                                                                                                                                                                          weighted avg       0.32      0.27      0.21      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                                                              text                                                                                                                                                                              true_label                                                                                                                                                                         predicted_label  confidence
+2521                                                                                                                                          Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more slanting to the right than to the left. Some question the war, some cheer it.                         Determine if this text is primarily about sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.                              Determine if this text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.    0.680542
+202                                                                                                                                                Stunt pilots to save sun dust IT PROMISES to be a scene worthy of a science fiction spectacular. A space probe carrying primordial material scooped from outer space starts to plunge towards our planet. But before it can strike, a helicopter flown by a Hollywood stunt ...                         Determine if this text is primarily about sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.  Identify if the text explores scientific concepts, technological advancements, engineering projects, computer science, medical breakthroughs, natural phenomena, or space exploration.    0.629819
+2898                                                                                                                                                                       Sports in brief He yelped after his second drive. His knees buckled after making contact on the sixth tee. . (See photo at left.) He stopped a half-dozen times and lifted his shirt so his caddie could rub heating cream between his shoulder blades.  Classify the text based on whether it focuses on business topics such as company strategies, market trends, financial reports, investments, economic indicators, or industry analysis.                         Determine if this text is primarily about sports, including competitions, athletes, teams, leagues, sporting news, athletic performance, or related commentary.    0.602281
+...
+0: "Classify the text based on whether it discusses business topics such as company strategies, market trends, financial reports, investments, or economic indicators."
+1: "Determine if the text focuses primarily on sports events, athletes, teams, leagues, sporting news, or athletic performance."
+2: "Identify if the text explores scientific concepts like technology, engineering, computer science, medical advancements, natural phenomena, or space exploration."
+3: "Determine if the text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'Classify the text based on whether it discusses business topics such as company strategies, market trends, financial reports, investments, or economic indicators.', 1: 'Determine if the text focuses primarily on sports events, athletes, teams, leagues, sporting news, or athletic performance.', 2: 'Identify if the text explores scientific concepts like technology, engineering, computer science, medical advancements, natural phenomena, or space exploration.', 3: 'Determine if the text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['Classify the text based on whether it discusses business topics such as company strategies, market trends, financial reports, investments, or economic indicators.', 'Determine if the text focuses primarily on sports events, athletes, teams, leagues, sporting news, or athletic performance.', 'Identify if the text explores scientific concepts like technology, engineering, computer science, medical advancements, natural phenomena, or space exploration.', 'Determine if the text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.']
+
+Overall Accuracy: 38.03%
+
+Per-class Performance:
+                                                                                                                                                                    precision    recall  f1-score   support
+
+Classify the text based on whether it discusses business topics such as company strategies, market trends, financial reports, investments, or economic indicators.       0.12      0.01      0.02       747
+         Determine if the text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.       0.18      0.05      0.08       776
+                                       Determine if the text focuses primarily on sports events, athletes, teams, leagues, sporting news, or athletic performance.       0.73      0.68      0.70       775
+  Identify if the text explores scientific concepts like technology, engineering, computer science, medical advancements, natural phenomena, or space exploration.       0.28      0.81      0.42       702
+
+                                                                                                                                                          accuracy                           0.38      3000
+                                                                                                                                                         macro avg       0.33      0.39      0.31      3000
+                                                                                                                                                      weighted avg       0.33      0.38      0.31      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                                          text                                                                                                                                                 true_label                                                                                                                                                   predicted_label  confidence
+202                                                                                                                            Stunt pilots to save sun dust IT PROMISES to be a scene worthy of a science fiction spectacular. A space probe carrying primordial material scooped from outer space starts to plunge towards our planet. But before it can strike, a helicopter flown by a Hollywood stunt ...  Determine if the text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.  Identify if the text explores scientific concepts like technology, engineering, computer science, medical advancements, natural phenomena, or space exploration.    0.752113
+2807                                                                                                                                                                                                                                       Success For Spaceship One MOJAVE -- Burt Rutan #39;s space ship one made its first trip into sub-orbital outer space in pursuit of the \$10 million Ansari X Prize.  Determine if the text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.  Identify if the text explores scientific concepts like technology, engineering, computer science, medical advancements, natural phenomena, or space exploration.    0.628798
+1573  FDA Scientists Testing Limits of Medical Technology By LAURAN NEERGAARD    WASHINGTON (AP) -- A little-known Food and Drug program is testing the latest medical technology to determine how safe and useful it can be.    One cutting-edge experiment is designed to see if injecting certain drugs directly into diseased arteries works better than commonly used stents in keeping arteries clear...  Determine if the text discusses government actions, political ideologies, political parties, international relations, wars, elections, or current events.  Identify if the text explores scientific concepts like technology, engineering, computer science, medical advancements, natural phenomena, or space exploration.    0.600112
+...
+0: "Classify the text based on whether it discusses business topics such as company strategies, market trends, financial performance, investments, mergers and acquisitions, or economic indicators like GDP growth or inflation."
+1: "Determine if the text focuses primarily on sports events, including games, tournaments, athlete biographies, team news, sporting controversies, or athletic records."
+2: "Identify if the text explores scientific concepts from fields such as technology, medicine, space exploration, physics, engineering, biology, or chemistry. "
+3: "Classify the text based on whether it discusses government actions, policies, political ideologies, elections, international relations, laws, or social movements."
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+  0%|          | 0/3000 [00:00<?, ?it/s]
+
+    Here are the current prompts for labels:
+{0: 'Classify the text based on whether it discusses business topics such as company strategies, market trends, financial performance, investments, mergers and acquisitions, or economic indicators like GDP growth or inflation.', 1: 'Determine if the text focuses primarily on sports events, including games, tournaments, athlete biographies, team news, sporting controversies, or athletic records.', 2: 'Identify if the text explores scientific concepts from fields such as technology, medicine, space exploration, physics, engineering, biology, or chemistry. ', 3: 'Classify the text based on whether it discusses government actions, policies, political ideologies, elections, international relations, laws, or social movements.'}
+    Here is the analysis for your last set of prompts/labels for the data:
+    Candidate labels: ['Classify the text based on whether it discusses business topics such as company strategies, market trends, financial performance, investments, mergers and acquisitions, or economic indicators like GDP growth or inflation.', 'Determine if the text focuses primarily on sports events, including games, tournaments, athlete biographies, team news, sporting controversies, or athletic records.', 'Identify if the text explores scientific concepts from fields such as technology, medicine, space exploration, physics, engineering, biology, or chemistry. ', 'Classify the text based on whether it discusses government actions, policies, political ideologies, elections, international relations, laws, or social movements.']
+
+Overall Accuracy: 35.73%
+
+Per-class Performance:
+                                                                                                                                                                                                                               precision    recall  f1-score   support
+
+Classify the text based on whether it discusses business topics such as company strategies, market trends, financial performance, investments, mergers and acquisitions, or economic indicators like GDP growth or inflation.       0.18      0.03      0.06       747
+                                                           Classify the text based on whether it discusses government actions, policies, political ideologies, elections, international relations, laws, or social movements.       0.20      0.01      0.02       776
+                                                         Determine if the text focuses primarily on sports events, including games, tournaments, athlete biographies, team news, sporting controversies, or athletic records.       0.68      0.56      0.61       775
+                                                                 Identify if the text explores scientific concepts from fields such as technology, medicine, space exploration, physics, engineering, biology, or chemistry.        0.28      0.86      0.42       702
+
+                                                                                                                                                                                                                     accuracy                           0.36      3000
+                                                                                                                                                                                                                    macro avg       0.33      0.37      0.28      3000
+                                                                                                                                                                                                                 weighted avg       0.34      0.36      0.28      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                                          text                                                                                                                                                          true_label                                                                                                                                               predicted_label  confidence
+202                                                                                                                            Stunt pilots to save sun dust IT PROMISES to be a scene worthy of a science fiction spectacular. A space probe carrying primordial material scooped from outer space starts to plunge towards our planet. But before it can strike, a helicopter flown by a Hollywood stunt ...  Classify the text based on whether it discusses government actions, policies, political ideologies, elections, international relations, laws, or social movements.  Identify if the text explores scientific concepts from fields such as technology, medicine, space exploration, physics, engineering, biology, or chemistry.     0.646329
+1573  FDA Scientists Testing Limits of Medical Technology By LAURAN NEERGAARD    WASHINGTON (AP) -- A little-known Food and Drug program is testing the latest medical technology to determine how safe and useful it can be.    One cutting-edge experiment is designed to see if injecting certain drugs directly into diseased arteries works better than commonly used stents in keeping arteries clear...  Classify the text based on whether it discusses government actions, policies, political ideologies, elections, international relations, laws, or social movements.  Identify if the text explores scientific concepts from fields such as technology, medicine, space exploration, physics, engineering, biology, or chemistry.     0.590080
+265                                                                                                                                                                                      Groups Eager to Meet With Bush, Kerry (AP) AP - Organizations representing the nation's 3 million scientists, engineers and doctors have invited both presidential candidates to have a word with them  #151; online.  Classify the text based on whether it discusses government actions, policies, political ideologies, elections, international relations, laws, or social movements.  Identify if the text explores scientific concepts from fields such as technology, medicine, space exploration, physics, engineering, biology, or chemistry.     0.574138
+...
+0: "Determine if the text focuses on a political event, policy discussion, or social movement."
+1: "Classify the text based on whether it discusses business strategies, market trends, financial performance, investments, mergers and acquisitions, or economic indicators like GDP growth."
+2: "Identify if the text primarily describes a sports event, tournament, athlete biography, team news, sporting controversy, or athletic record."
+3: "Identify if the text explores scientific concepts from fields such as technology, medicine, space exploration, physics, engineering, biology, or chemistry."

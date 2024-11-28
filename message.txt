@@ -1,0 +1,144 @@
+print(f"\nOverall Accuracy: {accuracy:.2f}%")
+Per class performance print(classification_report(df_results['true_label'], df_results['predicted_label'])) 
+Most confident mistakes print(mistakes[['text', 'true_label', 'predicted_label', 'confidence']].head())
+print("\nCommon Error Patterns:") for pattern, count in sorted(error_patterns.items(), key=lambda x: x[1], reverse=True):
+        print(f"{pattern}: {count}")
+        
+        
+    """
+    Perform comprehensive error analysis on the zero-shot classifier.
+    
+    Args:
+        dataset: The AG News dataset
+        classifier: The zero-shot classification pipeline
+        num_samples: Number of samples to analyze (use smaller number for testing)
+    """
+    # AG News labels mapping
+    # label_map = {
+    #     0: "This document is about politics",
+    #     1: "This document is about sports",
+    #     2: "This document is about economics",
+    #     3: "This document is about science and technology"
+    # }
+    
+    # label_map = {
+    #     0: "Classify as World News if related to global events or international affairs",
+    #     1: "Label as Sports News if about athletic events, teams, or player stories",
+    #     2: "Categorize as Business News if focusing on companies, markets, or financial reports",
+    #     3: "Mark as Science and Technology News if involving innovations, discoveries, or emerging tech" 
+    # }
+    # label_map = {
+    #     0: "World",
+    #     1: "Sports",
+    #     2: "Business",
+    #     3: "Sci/Tech"
+    # }
+
+
+
+
+def perform_error_analysis(dataset, classifier, label_map, num_samples=100):
+    """
+    Perform comprehensive error analysis on the zero-shot classifier.
+    
+    Args:
+        dataset: The AG News dataset
+        classifier: The zero-shot classification pipeline
+        num_samples: Number of samples to analyze (use smaller number for testing)
+    """
+    # AG News labels mapping
+    # label_map = {
+    #     0: "This document is about politics",
+    #     1: "This document is about sports",
+    #     2: "This document is about economics",
+    #     3: "This document is about science and technology"
+    # }
+    
+    # label_map = {
+    #     0: "Classify as World News if related to global events or international affairs",
+    #     1: "Label as Sports News if about athletic events, teams, or player stories",
+    #     2: "Categorize as Business News if focusing on companies, markets, or financial reports",
+    #     3: "Mark as Science and Technology News if involving innovations, discoveries, or emerging tech" 
+    # }
+    # label_map = {
+    #     0: "World",
+    #     1: "Sports",
+    #     2: "Business",
+    #     3: "Sci/Tech"
+    # }
+
+    
+    # Prepare candidate labels for zero-shot classification
+    candidate_labels = list(label_map.values())
+    print(candidate_labels)
+    
+    # Store results
+    results = []
+    
+    # Process test samples
+    for i, item in tqdm(enumerate(dataset['test']), total=num_samples):
+        if i >= num_samples:
+            break
+            
+        text = item['text']
+        true_label = label_map[item['label']]
+        
+        # Get model prediction
+        prediction = classifier(text, candidate_labels)
+        predicted_label = prediction['labels'][0]
+        confidence = prediction['scores'][0]
+        
+        
+        
+        results.append({
+            'text': text,
+            'true_label': true_label,
+            'predicted_label': predicted_label,
+            'confidence': confidence,
+            'correct': true_label == predicted_label
+        })
+    
+    # Convert to DataFrame
+    df_results = pd.DataFrame(results)
+    
+    # 1. Overall Accuracy
+    accuracy = (df_results['correct'].sum() / len(df_results)) * 100
+    print(f"\nOverall Accuracy: {accuracy:.2f}%")
+    
+    # 2. Per-class Performance
+    print("\nPer-class Performance:")
+    print(classification_report(df_results['true_label'], df_results['predicted_label'])) 
+    
+    # # 3. Confusion Matrix
+    # plt.figure(figsize=(10, 8))
+    # cm = confusion_matrix(df_results['true_label'], df_results['predicted_label'], labels=candidate_labels)
+    # sns.heatmap(cm, annot=True, fmt='d', xticklabels=candidate_labels, yticklabels=candidate_labels)
+    # plt.title('Confusion Matrix')
+    # plt.xlabel('Predicted')
+    # plt.ylabel('True')
+    # plt.xticks(rotation=45)
+    # plt.tight_layout()
+    # plt.show()
+    
+    # # 4. Confidence Analysis
+    # plt.figure(figsize=(10, 6))
+    # sns.boxplot(x='true_label', y='confidence', hue='correct', data=df_results)
+    # plt.title('Confidence Distribution by Class and Correctness')
+    # plt.xticks(rotation=45)
+    # plt.tight_layout()
+    # plt.show()
+    
+    # 5. Error Examples Analysis
+    print("\nMost Confident Mistakes:")
+    mistakes = df_results[~df_results['correct']].sort_values('confidence', ascending=False)
+    print(mistakes[['text', 'true_label', 'predicted_label', 'confidence']].head())
+    
+    # # 6. Length Analysis
+    # df_results['text_length'] = df_results['text'].str.len()
+    # plt.figure(figsize=(10, 6))
+    # sns.boxplot(x='true_label', y='text_length', hue='correct', data=df_results)
+    # plt.title('Text Length Distribution by Class and Correctness')
+    # plt.xticks(rotation=45)
+    # plt.tight_layout()
+    # plt.show()
+    return df_results

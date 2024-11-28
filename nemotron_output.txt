@@ -1,0 +1,179 @@
+Iteration 1: Current label prompts:
+0: "World"
+1: "Sports"
+2: "Business"
+4: "Sci/Tech"
+{0: "This text is about global events or international news", 
+1: "The topic of this article is sports related", 
+2: "This piece of writing focuses on corporate or financial news", 
+3: "The subject matter of this text involves science, technology, or innovations"}
+
+Iteration 2: Current label prompts:
+0: "This text is about global events or international news"
+1: "The topic of this article is sports related"
+2: "This piece of writing focuses on corporate or financial news"
+3: "The subject matter of this text involves science, technology, or innovations"
+100%
+ 3000/3000 [02:07<00:00, 23.65it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is about global events or international news', 1: 'The topic of this article is sports related', 2: 'This piece of writing focuses on corporate or financial news', 3: 'The subject matter of this text involves science, technology, or innovations'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is about global events or international news', 'The topic of this article is sports related', 'This piece of writing focuses on corporate or financial news', 'The subject matter of this text involves science, technology, or innovations']
+
+Overall Accuracy: 80.70%
+
+Per-class Performance:
+                                                                              precision    recall  f1-score   support
+
+The subject matter of this text involves science, technology, or innovations       0.77      0.72      0.75       776
+                                 The topic of this article is sports related       0.95      0.97      0.96       775
+                This piece of writing focuses on corporate or financial news       0.79      0.68      0.73       702
+                      This text is about global events or international news       0.72      0.84      0.78       747
+
+                                                                    accuracy                           0.81      3000
+                                                                   macro avg       0.81      0.80      0.80      3000
+                                                                weighted avg       0.81      0.81      0.81      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                    true_label                                                               predicted_label  confidence
+796                                                                                                      The Hunt for a Hybrid The Aug. 23 front-page article on the Toyota Prius vs. the Honda Civic implied that the main reason people prefer the Prius was its  quot;geek-chic look quot; and the image buyers want.                  This piece of writing focuses on corporate or financial news  The subject matter of this text involves science, technology, or innovations    0.947209
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  The subject matter of this text involves science, technology, or innovations                  This piece of writing focuses on corporate or financial news    0.932422
+1140                        Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.  The subject matter of this text involves science, technology, or innovations                                   The topic of this article is sports related    0.929484
+...
+0: "This text is about geopolitics, global issues, or international relations"
+1: "The topic of this article is sports related"
+2: "This piece of writing primarily discusses company operations, financial markets, or economic trends"
+3: "The subject matter of this text involves science, technology, or innovations"
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [04:33<00:00, 10.54it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is about geopolitics, global issues, or international relations', 1: 'The topic of this article is sports related', 2: 'This piece of writing primarily discusses company operations, financial markets, or economic trends', 3: 'The subject matter of this text involves science, technology, or innovations'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is about geopolitics, global issues, or international relations', 'The topic of this article is sports related', 'This piece of writing primarily discusses company operations, financial markets, or economic trends', 'The subject matter of this text involves science, technology, or innovations']
+
+Overall Accuracy: 72.13%
+
+Per-class Performance:
+                                                                                                     precision    recall  f1-score   support
+
+                       The subject matter of this text involves science, technology, or innovations       0.70      0.85      0.77       776
+                                                        The topic of this article is sports related       0.94      0.99      0.96       775
+This piece of writing primarily discusses company operations, financial markets, or economic trends       0.84      0.13      0.22       702
+                          This text is about geopolitics, global issues, or international relations       0.57      0.87      0.69       747
+
+                                                                                           accuracy                           0.72      3000
+                                                                                          macro avg       0.76      0.71      0.66      3000
+                                                                                       weighted avg       0.76      0.72      0.67      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                              text                                                                                           true_label                                                               predicted_label  confidence
+1140  Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.                         The subject matter of this text involves science, technology, or innovations                                   The topic of this article is sports related    0.959912
+796                                                                                The Hunt for a Hybrid The Aug. 23 front-page article on the Toyota Prius vs. the Honda Civic implied that the main reason people prefer the Prius was its  quot;geek-chic look quot; and the image buyers want.  This piece of writing primarily discusses company operations, financial markets, or economic trends  The subject matter of this text involves science, technology, or innovations    0.953717
+806                                           Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advisors to the US Food and Drug Administration.  This piece of writing primarily discusses company operations, financial markets, or economic trends  The subject matter of this text involves science, technology, or innovations    0.945664
+...
+0: "This text is about global events, international conflicts, or geopolitical dynamics"
+1: "The topic of this article is sports related"
+2: "This piece of writing focuses on corporate news, market analysis, or financial industry trends"
+3: "The subject matter of this text involves science, technology, or innovations"
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [03:04<00:00, 10.88it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is about global events, international conflicts, or geopolitical dynamics', 1: 'The topic of this article is sports related', 2: 'This piece of writing focuses on corporate news, market analysis, or financial industry trends', 3: 'The subject matter of this text involves science, technology, or innovations'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is about global events, international conflicts, or geopolitical dynamics', 'The topic of this article is sports related', 'This piece of writing focuses on corporate news, market analysis, or financial industry trends', 'The subject matter of this text involves science, technology, or innovations']
+
+Overall Accuracy: 82.13%
+
+Per-class Performance:
+                                                                                                precision    recall  f1-score   support
+
+                  The subject matter of this text involves science, technology, or innovations       0.78      0.78      0.78       776
+                                                   The topic of this article is sports related       0.94      0.98      0.96       775
+This piece of writing focuses on corporate news, market analysis, or financial industry trends       0.79      0.66      0.72       702
+           This text is about global events, international conflicts, or geopolitical dynamics       0.76      0.85      0.80       747
+
+                                                                                      accuracy                           0.82      3000
+                                                                                     macro avg       0.82      0.82      0.82      3000
+                                                                                  weighted avg       0.82      0.82      0.82      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                                      true_label                                                                                 predicted_label  confidence
+1140                        Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.                    The subject matter of this text involves science, technology, or innovations                                                     The topic of this article is sports related    0.957637
+806                                                                 Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advisors to the US Food and Drug Administration.  This piece of writing focuses on corporate news, market analysis, or financial industry trends                    The subject matter of this text involves science, technology, or innovations    0.932307
+796                                                                                                      The Hunt for a Hybrid The Aug. 23 front-page article on the Toyota Prius vs. the Honda Civic implied that the main reason people prefer the Prius was its  quot;geek-chic look quot; and the image buyers want.  This piece of writing focuses on corporate news, market analysis, or financial industry trends                    The subject matter of this text involves science, technology, or innovations    0.930938
+...
+0: "This text is about global events, international conflicts, or geopolitical dynamics"
+1: "The topic of this article is sports related"
+2: "This content focuses on company operations, market trends, financial reports, or industry analysis"
+3: "This text is about scientific discoveries, emerging technologies, or innovative developments"
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+ 86%
+ 2588/3000 [02:09<00:18, 22.08it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text is about global events, international conflicts, or geopolitical dynamics', 1: 'The topic of this article is sports related', 2: 'This content focuses on company operations, market trends, financial reports, or industry analysis', 3: 'This text is about scientific discoveries, emerging technologies, or innovative developments'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text is about global events, international conflicts, or geopolitical dynamics', 'The topic of this article is sports related', 'This content focuses on company operations, market trends, financial reports, or industry analysis', 'This text is about scientific discoveries, emerging technologies, or innovative developments']
+
+Overall Accuracy: 73.07%
+
+Per-class Performance:
+                                                                                                    precision    recall  f1-score   support
+
+                                                       The topic of this article is sports related       0.94      0.98      0.96       775
+This content focuses on company operations, market trends, financial reports, or industry analysis       0.57      0.74      0.64       702
+               This text is about global events, international conflicts, or geopolitical dynamics       0.66      0.85      0.74       747
+      This text is about scientific discoveries, emerging technologies, or innovative developments       0.86      0.36      0.50       776
+
+                                                                                          accuracy                           0.73      3000
+                                                                                         macro avg       0.76      0.73      0.71      3000
+                                                                                      weighted avg       0.76      0.73      0.71      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                    text                                                                                          true_label                                                                                     predicted_label  confidence
+1140                        Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\add a steady stream of statistics and mix in a healthy dollop\of trash talk. Post it all on the Internet and you've got a  #36;3\billion industry built around imaginary sports teams.        This text is about scientific discoveries, emerging technologies, or innovative developments                                                         The topic of this article is sports related    0.945263
+2006                                                                                                   Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.        This text is about scientific discoveries, emerging technologies, or innovative developments  This content focuses on company operations, market trends, financial reports, or industry analysis    0.925501
+1883  CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.        This text is about scientific discoveries, emerging technologies, or innovative developments  This content focuses on company operations, market trends, financial reports, or industry analysis    0.864513
+...
+0: "This text primarily discusses international relations, geopolitical conflicts, or worldwide news events"
+1: "The topic of this article is sports related"
+2: "This content focuses on corporate news, financial market analysis, or industry-specific business developments"
+3: "This text explores breakthroughs in science, emerging tech innovations, or cutting-edge research and development"
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
+100%
+ 3000/3000 [02:33<00:00, 26.74it/s]
+
+            Here are the current prompts for labels:
+{0: 'This text primarily discusses international relations, geopolitical conflicts, or worldwide news events', 1: 'The topic of this article is sports related', 2: 'This content focuses on corporate news, financial market analysis, or industry-specific business developments', 3: 'This text explores breakthroughs in science, emerging tech innovations, or cutting-edge research and development'}
+            Here is the analysis for your last set of prompts/labels for the data:
+            Candidate labels: ['This text primarily discusses international relations, geopolitical conflicts, or worldwide news events', 'The topic of this article is sports related', 'This content focuses on corporate news, financial market analysis, or industry-specific business developments', 'This text explores breakthroughs in science, emerging tech innovations, or cutting-edge research and development']
+
+Overall Accuracy: 65.93%
+
+Per-class Performance:
+                                                                                                                  precision    recall  f1-score   support
+
+                                                                     The topic of this article is sports related       0.94      0.98      0.96       775
+   This content focuses on corporate news, financial market analysis, or industry-specific business developments       0.62      0.89      0.73       702
+This text explores breakthroughs in science, emerging tech innovations, or cutting-edge research and development       0.46      0.64      0.53       776
+         This text primarily discusses international relations, geopolitical conflicts, or worldwide news events       0.94      0.13      0.23       747
+
+                                                                                                        accuracy                           0.66      3000
+                                                                                                       macro avg       0.74      0.66      0.61      3000
+                                                                                                    weighted avg       0.74      0.66      0.61      3000
+
+Most Confident Mistakes:
+                                                                                                                                                                                                                                                                                                                                                                                             text                                                                                                        true_label                                                                                                   predicted_label  confidence
+2006                                                                                                                                                                            Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's to come.  This text explores breakthroughs in science, emerging tech innovations, or cutting-edge research and development     This content focuses on corporate news, financial market analysis, or industry-specific business developments    0.918572
+806                                                                                                                                          Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advisors to the US Food and Drug Administration.     This content focuses on corporate news, financial market analysis, or industry-specific business developments  This text explores breakthroughs in science, emerging tech innovations, or cutting-edge research and development    0.911020
+1883                                                                           CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most important projects are first, that they are justified, and that they actually deliver on their forecast benefits.  This text explores breakthroughs in science, emerging tech innovations, or cutting-edge research and development     This content focuses on corporate news, financial market analysis, or industry-specific business developments    0.902679
+...
+{0: "This text is about global events, geopolitics, or international news beyond a country's domestic affairs",
+1: "The topic of this article is sports related" (No change, precision > 0.90),
+2: "This content revolves around company operations, financial markets, industry trends, or economic developments",
+3: "This text delves into scientific discoveries, emerging technologies, innovative research, or technological advancements"}
