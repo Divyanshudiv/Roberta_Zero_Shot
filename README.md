@@ -6,7 +6,7 @@ This project demonstrates the use of a pre-trained RoBERTa model for zero-shot t
 
 ## Features
 - Utilizes the Hugging Face `transformers` library for seamless integration with the RoBERTa model.
-- Perform zero-shot classification on any dataset, such as AG News.
+- Performs zero-shot classification on any dataset, such as AG News.
 - Flexible and easy-to-extend implementation.
 
 ---
